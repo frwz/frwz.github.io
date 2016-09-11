@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>FrWz | The Little Prince-sama</title>
+<style>
+* {
+	font-family: "Palatino", "Times New Roman", "STKaiti", serif;
+}
+h1 {
+	font-size: 30pt;
+}
+h2 {
+	font-size: 24pt;
+}
+h3 {
+	font-size: 20pt;
+}
+label, rb, .ja, .ja td {
+	font-size: 20pt;
+}
+.ja {
+	white-space: nowrap;
+}
+rt {
+	font-size: 14pt;
+}
+#story {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+p, li {
+	line-height: 36pt;
+	text-align: justify;
+	font-size: 18pt;
+	word-spacing: 10px;
+}
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+label {
+	cursor: pointer;
+	border-radius: 8px;
+    padding: 4px;
+    margin-left: -4px;
+    margin-right: -4px;
+    white-space: nowrap;
+    z-index: 2;
+    position: relative;
+}
+label label {
+	padding-left: 0;
+	margin-left: -2px;
+	z-index: 2;
+	border-left: 2px solid white;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+input {
+	display: none;
+}
+#cancel {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	cursor: default;
+	z-index: 1;
+}
+#_:checked~p #cancel {
+	z-index: -1;
+}
+.k {
+	display: inline-block;
+}
+.r {
+	color: red;
+	text-align: center;
+}
+label>.r {
+	font-size: 16pt;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<p><a href="/">&larr; Home</a></p>
+
+<div id="story">
+
+<style>
+#boku:checked~p label[for="boku"],
+#miru:checked~p label[for="miru"],
+#wo:checked~p label[for="wo"],
+#de:checked~p label[for="de"],
+#to:checked~p label[for="to"],
+#iu:checked~p label[for="iu"],
+#boa:checked~p label[for="boa"],
+#da:checked~p label[for="da"],
+#ni:checked~p label[for="ni"],
+#ha:checked~p label[for="ha"],
+#no:checked~p label[for="no"],
+#janguru:checked~p label[for="janguru"],
+#ichi:checked~p label[for="ichi"],
+#kono:checked~p label[for="kono"],
+#konna:checked~p label[for="konna"],
+#ga:checked~p label[for="ga"],
+#kou:checked~p label[for="kou"],
+#kowai:checked~p label[for="kowai"],
+#daija:checked~p label[for="daija"],
+#sore:checked~p label[for="sore"],
+#e:checked~p label[for="e"],
+#suru:checked~p label[for="suru"],
+#iru:checked~p label[for="iru"],
+#youni:checked~p label[for="youni"],
+#tachi:checked~p label[for="tachi"],
+#ga:checked~p label[for="ga"],
+#otona:checked~p label[for="otona"],
+#ni2:checked~p label[for="ni2"],
+#fuu:checked~p label[for="fuu"],
+#nasai:checked~p label[for="nasai"],
+#ya:checked~p label[for="ya"],
+#roku:checked~p label[for="roku"],
+#akirameru:checked~p label[for="akirameru"],
+#mo:checked~p label[for="mo"],
+#dai:checked~p label[for="dai"],
+#gou:checked~p label[for="gou"],
+#kesshite:checked~p label[for="kesshite"],
+#kara:checked~p label[for="kara"],
+#itsumo:checked~p label[for="itsumo"],
+#koushite:checked~p label[for="koushite"],
+#hoka:checked~p label[for="hoka"],
+#soshite:checked~p label[for="soshite"],
+#mawaru:checked~p label[for="mawaru"],
+#sekai:checked~p label[for="sekai"],
+#totemo:checked~p label[for="totemo"],
+#arizona:checked~p label[for="arizona"],
+#toki:checked~p label[for="toki"],
+#aru:checked~p label[for="aru"],
+#sonna:checked~p label[for="sonna"],
+#na:checked~p label[for="na"],
+#kadouka:checked~p label[for="kadouka"],
+#hito:checked~p label[for="hito"],
+#wakaru:checked~p label[for="wakaru"],
+#demo:checked~p label[for="demo"],
+#desu:checked~p label[for="desu"],
+#sono:checked~p label[for="sono"],
+#hanasu:checked~p label[for="hanasu"],
+#souna:checked~p label[for="souna"],
+#toranpu:checked~p label[for="toranpu"],
+#burijji:checked~p label[for="burijji"],
+#gorufu:checked~p label[for="gorufu"],
+#nekutai:checked~p label[for="nekutai"],
+#sahara:checked~p label[for="sahara"],
+#sabaku:checked~p label[for="sabaku"],
+#enjin:checked~p label[for="enjin"],
+#ikiru:checked~p label[for="ikiru"],
+#ka:checked~p label[for="ka"],
+#mizu:checked~p label[for="mizu"],
+#mairu:checked~p label[for="mairu"],
+#yori:checked~p label[for="yori"],
+#e2:checked~p label[for="e2"],
+#hitsuji:checked~p label[for="hitsuji"],
+#kaku:checked~p label[for="kaku"],
+#kore:checked~p label[for="kore"],
+#soushite:checked~p label[for="soushite"],
+#nai:checked~p label[for="nai"],
+#nanishiro:checked~p label[for="nanishiro"],
+#sai:checked~p label[for="sai"],
+#naka:checked~p label[for="naka"],
+#sen:checked~p label[for="sen"],
+#ri:checked~p label[for="ri"],
+#sumu:checked~p label[for="sumu"],
+#ji:checked~p label[for="ji"],
+#kanata:checked~p label[for="kanata"],
+#kimi:checked~p label[for="kimi"],
+#onegai:checked~p label[for="onegai"],
+#poketto:checked~p label[for="poketto"],
+#mai:checked~p label[for="mai"],
+#toru:checked~p label[for="toru"],
+#dasu:checked~p label[for="dasu"],
+#kuru:checked~p label[for="kuru"],
+#koto:checked~p label[for="koto"],
+#otoko:checked~p label[for="otoko"],
+#ko:checked~p label[for="ko"],
+#n:checked~p label[for="n"],
+#nee:checked~p label[for="nee"],
+#yo:checked~p label[for="yo"],
+#onaji:checked~p label[for="onaji"],
+#naru:checked~p label[for="naru"],
+#taberu:checked~p label[for="taberu"],
+#doushite:checked~p label[for="doushite"],
+#chiisai:checked~p label[for="chiisai"],
+#sama:checked~p label[for="sama"],
+#xxxxxxx
+{
+	background: rgba(0, 255, 0, 0.5);
+}
+
+#_ta:checked~p label[for="_ta"],
+#_te:checked~p label[for="_te"],
+#_nai:checked~p label[for="_nai"],
+#_eru:checked~p label[for="_eru"],
+#_you:checked~p label[for="_you"],
+#_mai:checked~p label[for="_mai"],
+#_seru:checked~p label[for="_seru"],
+#_reru:checked~p label[for="_reru"],
+#xxxxxxx
+{ 
+	/*background-color: #f0f;*/
+	background: rgba(255, 0, 255, 0.5);
+}
+
+</style>
+<input type="radio" name="note" id="_" checked/>
+<input type="radio" name="note" id="boku"/>
+<input type="radio" name="note" id="miru"/>
+<input type="radio" name="note" id="_ta"/>
+<input type="radio" name="note" id="wo"/>
+<input type="radio" name="note" id="de"/>
+<input type="radio" name="note" id="to"/>
+<input type="radio" name="note" id="iu"/>
+<input type="radio" name="note" id="boa"/>
+<input type="radio" name="note" id="da"/>
+<input type="radio" name="note" id="ni"/>
+<input type="radio" name="note" id="ha"/>
+<input type="radio" name="note" id="no"/>
+<input type="radio" name="note" id="janguru"/>
+<input type="radio" name="note" id="ichi"/>
+<input type="radio" name="note" id="konna"/>
+<input type="radio" name="note" id="kono"/>
+<input type="radio" name="note" id="_te"/>
+<input type="radio" name="note" id="kou"/>
+<input type="radio" name="note" id="ga"/>
+<input type="radio" name="note" id="kowai"/>
+<input type="radio" name="note" id="_nai"/>
+<input type="radio" name="note" id="daija"/>
+<input type="radio" name="note" id="sore"/>
+<input type="radio" name="note" id="e"/>
+<input type="radio" name="note" id="suru"/>
+<input type="radio" name="note" id="iru"/>
+<input type="radio" name="note" id="youni"/>
+<input type="radio" name="note" id="tachi"/>
+<input type="radio" name="note" id="ga"/>
+<input type="radio" name="note" id="_eru"/>
+<input type="radio" name="note" id="otona"/>
+<input type="radio" name="note" id="ni2"/>
+<input type="radio" name="note" id="fuu"/>
+<input type="radio" name="note" id="_you"/>
+<input type="radio" name="note" id="_mai"/>
+<input type="radio" name="note" id="nasai"/>
+<input type="radio" name="note" id="ya"/>
+<input type="radio" name="note" id="roku"/>
+<input type="radio" name="note" id="akirameru"/>
+<input type="radio" name="note" id="mo"/>
+<input type="radio" name="note" id="dai"/>
+<input type="radio" name="note" id="gou"/>
+<input type="radio" name="note" id="kesshite"/>
+<input type="radio" name="note" id="kara"/>
+<input type="radio" name="note" id="itsumo"/>
+<input type="radio" name="note" id="koushite"/>
+<input type="radio" name="note" id="hoka"/>
+<input type="radio" name="note" id="soshite"/>
+<input type="radio" name="note" id="mawaru"/>
+<input type="radio" name="note" id="sekai"/>
+<input type="radio" name="note" id="totemo"/>
+<input type="radio" name="note" id="arizona"/>
+<input type="radio" name="note" id="toki"/>
+<input type="radio" name="note" id="aru"/>
+<input type="radio" name="note" id="sonna"/>
+<input type="radio" name="note" id="na"/>
+<input type="radio" name="note" id="kadouka"/>
+<input type="radio" name="note" id="hito"/>
+<input type="radio" name="note" id="wakaru"/>
+<input type="radio" name="note" id="demo"/>
+<input type="radio" name="note" id="desu"/>
+<input type="radio" name="note" id="sono"/>
+<input type="radio" name="note" id="hanasu"/>
+<input type="radio" name="note" id="souna"/>
+<input type="radio" name="note" id="toranpu"/>
+<input type="radio" name="note" id="burijji"/>
+<input type="radio" name="note" id="gorufu"/>
+<input type="radio" name="note" id="nekutai"/>
+<input type="radio" name="note" id="_seru"/>
+<input type="radio" name="note" id="sahara"/>
+<input type="radio" name="note" id="sabaku"/>
+<input type="radio" name="note" id="enjin"/>
+<input type="radio" name="note" id="ikiru"/>
+<input type="radio" name="note" id="ka"/>
+<input type="radio" name="note" id="mizu"/>
+<input type="radio" name="note" id="mairu"/>
+<input type="radio" name="note" id="yori"/>
+<input type="radio" name="note" id="e2"/>
+<input type="radio" name="note" id="hitsuji"/>
+<input type="radio" name="note" id="kaku"/>
+<input type="radio" name="note" id="kore"/>
+<input type="radio" name="note" id="soushite"/>
+<input type="radio" name="note" id="nai"/>
+<input type="radio" name="note" id="nanishiro"/>
+<input type="radio" name="note" id="sai"/>
+<input type="radio" name="note" id="_reru"/>
+<input type="radio" name="note" id="naka"/>
+<input type="radio" name="note" id="sen"/>
+<input type="radio" name="note" id="ri"/>
+<input type="radio" name="note" id="sumu"/>
+<input type="radio" name="note" id="ji"/>
+<input type="radio" name="note" id="kanata"/>
+<input type="radio" name="note" id="kimi"/>
+<input type="radio" name="note" id="onegai"/>
+<input type="radio" name="note" id="poketto"/>
+<input type="radio" name="note" id="mai"/>
+<input type="radio" name="note" id="toru"/>
+<input type="radio" name="note" id="dasu"/>
+<input type="radio" name="note" id="kuru"/>
+<input type="radio" name="note" id="koto"/>
+<input type="radio" name="note" id="otoko"/>
+<input type="radio" name="note" id="ko"/>
+<input type="radio" name="note" id="n"/>
+<input type="radio" name="note" id="nee"/>
+<input type="radio" name="note" id="yo"/>
+<input type="radio" name="note" id="onaji"/>
+<input type="radio" name="note" id="naru"/>
+<input type="radio" name="note" id="taberu"/>
+<input type="radio" name="note" id="doushite"/>
+<input type="radio" name="note" id="chiisai"/>
+<input type="radio" name="note" id="sama"/>
+
+<p><label id="cancel" for="_">&nbsp;</label></p>
+
+<h1>The Little Prince-sama</h1>
+<p>by Antoine de Saint-Exupery</p>
+
+<h2>Chapter 1</h2>
+
+<p>Once when <label for="boku"><ruby><rb>僕</rb><rp>(</rp><rt>ぼく</rt><rp>)</rp></ruby></label> was six years old I 
+<label for="miru"><ruby><rb>見</rb><rp>(</rp><rt>み</rt><rp>)</rp></ruby><label for="_ta">た</label></label> a magnificent picture <label for="wo">を</label> a book <label for="de">で</label>, “True Stories from Nature” <label for="to">と</label> <label for="iu">いう</label>, about the primeval forest. A picture of a <label for="boa">ボア</label> constrictor in the act of swallowing an animal <label for="da">だ<label for="_ta">った</label></label>. Here a copy of the drawing <label for="da">だ</label>:</p>
+
+<img src="images/1a.jpg"/>
+
+<p>The book <label for="ni">に</label> <label for="ha">は</label>, it said: “<label for="boa">ボア</label> constrictors <label for="ha">は</label> swallow their prey whole, without chewing it. After that they are not able to move, and they sleep through the six months that they need for digestion.”</p>
+
+<p><label for="boku">僕</label> <label for="ha">は</label> pondered deeply over the <label for="janguru">ジャングル</label> <label for="de">で</label> <label for="no">の</label> adventures. And after some work with a colored pencil I succeeded in making my first drawing. <label for="boku">僕</label> <label for="no">の</label> Drawing Number <label for="ichi"><ruby><rb>一</rb><rp>(</rp><rt>いち</rt><rp>)</rp></ruby></label>. It looked like <label for="konna">こんな</label>:</p>
+
+<img src="images/1b.jpg"/>
+
+<p><label for="boku">僕</label> <label for="ha">は</label> showed <label for="boku">僕</label> <label for="no">の</label> masterpiece the grown-ups <label for="ni">に</label>, and, “Isn’t <label for="kono">この</label> drawing scary?” <label for="to">と</label> ask<label for="_te">て</label> tried.</p>
+
+<p>But the answer <label for="ha">は</label> <label for="kou">こう</label> <label for="da">だ<label for="_ta">った</label></label>: “<label for="kowai">こわい</label>? Why would a hat <label for="ga">が</label> be <label for="kowai">こわい</label> <label for="no">の</label>?”</p>
+
+<p>My drawing <label for="da">じゃ<label for="_nai">ない</label></label> a picture of a hat. <label for="sore">それ</label> <label for="ha">は</label> a <label for="e"><ruby><rb>絵</rb><rp>(</rp><rt>え</rt><rp>)</rp></ruby></label> of a <label for="daija"><ruby><rb>大蛇</rb><rp>(</rp><rt>だいじゃ</rt><rp>)</rp></ruby></label><label for="boa">ボア</label> digest<label for="suru">し<label for="_te">て</label></label><label for="iru">いる</label> an elephant <label for="wo">を</label>. But, <label for="youni">ように</label> the grown-up<label for="tachi">たち</label> could understand, I made another <label for="e">絵</label> <label for="wo">を</label>, where the <label for="daija">大蛇</label><label for="boa">ボア</label> <label for="no">の</label> insides <label for="ga">が</label> <label for="miru">見<label for="_eru">える</label></label> clearly. <label for="otona">おとな</label> <label for="tachi">たち</label> always need to have things explained. <label for="boku">僕</label> <label for="no">の</label> <label for="e">絵</label> Number <label for="ni2"><ruby><rb>二</rb><rp>(</rp><rt>に</rt><rp>)</rp></ruby></label> looked <label for="konna">こんな</label> <label for="fuu">ふう</label>:</p>
+
+<img src="images/1c.jpg"/>
+
+<p>This time, <label for="otona">おとな</label> <label for="tachi">たち</label> <label for="ha">は</label>, “Insides <label for="ga">が</label> <label for="miru">見<label for="_eru">え<label for="_you">よう</label></label></label> <label for="ga">が</label>, <label for="miru">見<label for="_eru">え<label for="_mai">まい</label></label></label> <label for="ga">が</label>, <label for="boa">ボア</label> <label for="no">の</label> <label for="e">絵</label> <label for="ha">は</label>, put them away <label for="nasai">なさい</label>,” <label for="to">と</label> <label for="iu">い<label for="_ta">った</label></label>. “Instead of <label for="sore">それ</label>, geography <label for="ya">や</label> history <label for="ya">や</label> arithmetic <label for="ya">や</label> grammar <label for="wo">を</label> study <label for="nasai">なさい</label>.” That is why, <label for="boku">僕</label> <label for="ha">は</label>, at the age of <label for="roku"><ruby><rb>六</rb><rp>(</rp><rt>ろく</rt><rp>)</rp></ruby></label>, an artist <label for="to">と</label> <label for="iu">いう</label> magnificent career <label for="wo">を</label> dream <label for="no">の</label> <label for="wo">を</label> <label for="akirameru">あきらめ<label for="_ta">た</label></label>. <label for="boku">僕</label> <label for="no">の</label> <label for="e">絵</label> <label for="dai"><ruby><rb>第</rb><rp>(</rp><rt>だい</rt><rp>)</rp></ruby></label><label for="ichi">一</label><label for="gou"><ruby><rb>号</rb><rp>(</rp><rt>ごう</rt><rp>)</rp></ruby></label> <label for="mo">も</label> <label for="e">絵</label> <label for="dai">第</label><label for="ni2">二</label><label for="gou">号</label> <label for="mo">も</label> not being recognized, disappoint<label for="suru">し<label for="_ta">た</label></label> <label for="no">の</label> <label for="da">だ</label>. <label for="otona">おとな</label> <label for="to">と</label> <label for="iu">いう</label> ones <label for="ha">は</label> by themselves <label for="kesshite">けっして</label> understand anything, <label for="kara">から</label> children <label for="ha">は</label> always and <label for="itsumo">いつも</label> have to explain things to them. Tiring <label for="ni">に</label> it becomes.</p>
+
+<p><label for="koushite">こうして</label>, <label for="hoka">ほか</label> career <label for="wo">を</label> having to choose, <label for="boku">僕</label> <label for="ha">は</label> airplane <label for="no">の</label> pilot <label for="wo">を</label> learn<label for="_ta">た</label>. <label for="soshite">そして</label>, I have flown <label for="mawaru">まわる</label> almost the whole <label for="sekai"><ruby><rb>世界</rb><rp>(</rp><rt>せかい</rt><rp>)</rp></ruby></label>. Certainly, geography <label for="ha">は</label> has been <label for="totemo">とっても</label> useful to me. At a glance, <label for="boku">僕</label> <label for="ha">は</label>, China <label for="to">と</label> <label for="arizona">アリゾナ</label> <label for="wo">を</label> can distinguish. Night get lost <label for="toki">とき</label>, or whenever, it really helps to <label for="aru">ある</label> such knowledge.</p>
+
+<p><label for="sonna">そんな</label> <label for="fuu">ふう</label> <label for="ni">に</label> course of my life <label for="de">で</label>, <label for="boku">僕</label> <label for="ha">は</label> so-called “capable<label for="na">な</label>” person<label for="tachi">たち</label> <label for="to">と</label> have met a great deal. <label for="otona">おとな</label> <label for="tachi">たち</label> together <label for="ni">に</label> a lot lived, up-close <label for="ni">に</label> <label for="miru">見<label for="_te">て</label></label> come<label for="_ta">た</label>. But <label for="boku">僕</label> <label for="no">の</label> opinion <label for="ha">は</label>, much change <label for="ha">は</label> did not happen.</p>
+
+<p><label for="boku">僕</label> <label for="ha">は</label>, always <label for="boku">僕</label> <label for="no">の</label> <label for="e">絵</label> <label for="dai">第</label><label for="ichi">一</label><label for="gou">号</label> <label for="wo">を</label> carry<label for="_te">て</label>, this <label for="ha">は</label>, at all clear-sighted<label for="na">な</label> <label for="to">と</label> I think person <label for="ni">に</label> encounter <label for="to">と</label>, experiment<label for="suru">し<label for="_te">て</label></label> try<label for="_ta">た</label>; because I wanted to know <label for="kadouka">かどうか</label> that <label for="hito"><ruby><rb>人</rb><rp>(</rp><rt>ひと</rt><rp>)</rp></ruby></label> is a <label for="hito">人</label> who really <label for="wakaru">わかる</label> things. <label for="demo">でも</label>, reply <label for="ha">は</label> <label for="itsumo">いつも</label> the same <label for="da">だ<label for="_ta">った</label></label>:</p>
+
+<p>“Hat <label for="desu">で<label for="_you">しょ</label></label>.”</p>
+
+<p><label for="sono">その</label> aftermath <label for="ha">は</label>, <label for="boku">僕</label> <label for="ha">は</label> anymore <label for="daija">大蛇</label><label for="boa">ボア</label> <label for="no">の</label> stories <label for="mo">も</label>, primeval forest <label for="no">の</label> <label for="hanasu"><ruby><rb>話</rb><rp>(</rp><rt>はなし</rt><rp>)</rp></ruby></label> <label for="mo">も</label>, stars <label for="no">の</label> <label for="hanasu">話</label> <label for="mo">も</label> <label for="suru">し<label for="_nai">なか<label for="_ta">った</label></label></label>. <label for="sono">その</label> <label for="hito">人</label> <label for="ga">が</label> <label for="wakaru">わかり</label> <label for="souna">そうな</label> things <label for="ni">に</label> match<label for="_seru">せ<label for="_te">て</label></label>: <label for="toranpu">トランプ</label><label for="no">の</label><label for="burijji">ブリッジ</label> <label for="ya">や</label> <label for="gorufu">ゴルフ</label> <label for="ya">や</label> politics <label for="ya">や</label> <label for="nekutai">ネクタイ</label> <label for="no">の</label> <label for="hanasu">話</label> <label for="wo">を</label> <label for="suru">し<label for="_ta">た</label></label>. Doing <label for="to">と</label>, <label for="sono">その</label> <label for="otona">おとな</label> <label for="ha">は</label>, himself <label for="to">と</label> same <label for="youni">ように</label> hobbies <label for="no">の</label> good person <label for="to">と</label> meet<label for="_eru">え<label for="_ta">た</label></label> <label for="to">と</label> feel<label for="_te">て</label>, a pleasant <label for="ni">に</label> to become reason <label for="da">だ</label>...
+
+<h2>Chapter 2</h2>
+
+<p><label for="koushite">こうして</label> <label for="boku">僕</label> <label for="ha">は</label>, heartfelt <label for="hanasu">話</label> <label for="ga">が</label> possible <label for="hito">人</label> <label for="mo">も</label> without, alone <label for="de">で</label> went through life; until, now <label for="kara">から</label> <label for="roku">六</label> years ago, <label for="sahara">サハラ</label><label for="sabaku"><ruby><rb>砂漠</rb><rp>(</rp><rt>さばく</rt><rp>)</rp></ruby></label> <label for="ni">に</label> airplane <label for="ga">が</label> emergency landing <label for="suru">する</label>. Airplane <label for="ha">は</label>, <label for="enjin">エンジン</label> <label for="no">の</label> something <label for="ga">が</label> broken<label for="_ta">た</label> <label for="no">の</label> <label for="da">だ</label>. And, mechanic <label for="mo">も</label> passengers <label for="mo">も</label> ride<label for="_te">て</label><label for="iru">い<label for="_nai">なか<label for="_ta">った</label></label></label> <label for="no">の</label> <label for="de">で</label>, difficult repairs <label for="wo">を</label> alone <label for="de">で</label> carry out could only <label for="to">と</label>, <label for="boku">僕</label> <label for="ha">は</label> prepared for the worst. <label for="ikiru"><ruby><rb>生</rb><rp>(</rp><rt>い</rt><rp>)</rp></ruby>きる</label> <label for="ka">か</label> die <label for="ka">か</label> <label for="no">の</label> question <label for="da">だ<label for="_ta">った</label></label>. Drinking <label for="mizu"><ruby><rb>水</rb><rp>(</rp><rt>みず</rt><rp>)</rp></ruby></label> <label for="ga">が</label>, <label for="ichi">一</label> week's time <label for="aru">ある</label> <label for="kadouka">かどうか</label> <label for="da">だ<label for="_ta">った</label></label>.</p>
+
+<p>The first <label for="no">の</label> night, <label for="hito">人</label> <label for="no">の</label> habitation <label for="kara">から</label> a thousand <label for="mairu">マイル</label> <label for="mo">も</label> away <label for="no">の</label> sand <label for="no">の</label> top <label for="de">で</label>, <label for="boku">僕</label> <label for="ha">は</label> sleep**** [nemuri] <label for="ni">に</label> went. Ship <label for="ga">が</label> sink<label for="_te">で</label>, the high seas <label for="no">の</label> middle <label for="wo">を</label> raft <label for="de">で</label> drift<label for="suru">し<label for="_te">て</label></label><label for="iru">いる</label> <label for="hito">人</label> <label for="yori">より</label>, more lonely <label for="da">だ<label for="_ta">った</label></label>. <label for="da">だ</label> <label for="kara">から</label>, daybreak <label for="ni">に</label>, little<label for="na">な</label> strange<label for="_ta">た</label> voice <label for="de">で</label> awaken<label for="_ta">た</label> <label for="toki">とき</label> <label for="ni">に</label> <label for="ha">は</label>, how surprise<label for="_ta">た</label> event <label for="da">だ<label for="_you">ろう</label></label>. Hear<label for="_ta">た</label> <label for="no">の</label> <label for="ha">は</label>, <label for="konna">こんな</label> voice...</p>
+
+<p>“Please... a sheep <label for="no">の</label> <label for="e">絵</label> <label for="wo">を</label> draw<label for="_te">て</label>!”</p>
+
+<p>“<label for="e2">え</label>?!”</p>
+
+<p>“<label for="hitsuji">ヒツジ</label> <label for="no">の</label> <label for="e">絵</label> <label for="wo">を</label> <label for="kaku"><ruby><rb>描</rb><rp>(</rp><rt>か</rt><rp>)</rp></ruby>い<label for="_te">て</label></label>!”</p>
+
+<p><label for="boku">僕</label> <label for="ha">は</label>, thunder <label for="ni">に</label> <label for="demo">でも</label> struck <label for="youni">ように</label>, jumped up. <label for="soushite">そうして</label> briskly my eyes <label for="wo">を</label> rub<label for="_ta">た</label>. Carefully I <label for="miru">見<label for="_te">て</label></label> try<label for="_ta">た</label>. <label for="suru">する</label> <label for="to">と</label>, there <label for="ni">に</label> <label for="ha">は</label>, a <label for="totemo">とても</label> extraordinary little<label for="na">な</label> boy <label for="ga">が</label> <label for="iru">い<label for="_te">て</label></label>, intently me <label for="wo">を</label> stare<label for="_te">て</label><label for="iru">いる</label>, was it? <label for="kore">これ</label> <label for="ga">が</label>, later <label for="ni">に</label> <label for="boku">僕</label> <label for="ga">が</label> <label for="kaku">描い<label for="_ta">た</label></label> among, the best I could <label for="sono">その</label> child <label for="no">の</label> portrait <label for="da">だ</label>. Although, <label for="boku">僕</label> <label for="no">の</label> <label for="e">絵</label> <label for="ha">は</label>, certainly, the sparkling <label for="ni">に</label> lovely<label for="_ta">た</label> before my eyes <label for="no">の</label> image <label for="wo">を</label>, <label for="totemo">とても</label> tell complete<label for="_te">て</label> <label for="ha">は</label> <label for="iru">い<label for="_nai">ない</label></label>.</p>
+
+<img src="images/2a.jpg"/>
+
+<p><label for="demo">でも</label> <label for="boku">僕</label> <label for="no">の</label> fault <label for="de">で</label> <label for="ha">は</label> <label for="nai">ない</label>. <label for="nanishiro">なにしろ</label>, it was because, since <label for="roku">六</label><label for="sai"><ruby><rb>歳</rb><rp>(</rp><rt>さい</rt><rp>)</rp></ruby></label> <label for="de">で</label> I by the <label for="otona">おとな</label> <label for="tachi">たち</label> an artist <label for="wo">を</label> dream <label for="no">の</label> <label for="wo">を</label> <label for="akirameru">あきらめ<label for="_seru">させ<label for="_reru">られ<label for="_ta">た</label></label></label></label>, <label for="naka">なか</label> <label for="ga">が</label> <label for="miru">見<label for="_eru">え<label for="_nai">ない</label></label></label> <label for="boa">ボア</label> <label for="to">と</label> <label for="miru">見<label for="_eru">える</label></label> <label for="boa">ボア</label> besides, <label for="e">絵</label> <label for="no">の</label> practice <label for="ha">は</label> any <label for="suru">し<label for="_nai">なか<label for="_ta">った</label></label></label> <label for="no">の</label> <label for="da">だ</label>.</p>
+
+<p>Anyway, <label for="boku">僕</label> <label for="ha">は</label>, <label for="sono">その</label> child <label for="ga">が</label> sudden appear<label for="_ta">た</label> event <label for="ni">に</label>, my eyes completely popping out<label for="suru">し<label for="_te">て</label></label><label for="iru">い<label for="_ta">た</label></label>. <label for="nanishiro">なにしろ</label>, <label for="hito">人</label> <label for="no">の</label> habitation <label for="kara">から</label> <label for="sen"><ruby><rb>千</rb><rp>(</rp><rt>せん</rt><rp>)</rp></ruby></label> <label for="mairu">マイル</label> <label for="mo">も</label> away was. <label for="sore">それ</label> despite, <label for="sono">その</label> boy <label for="ha">は</label>, lost <label for="no">の</label> <label for="de">で</label> <label for="ha">は</label> unlikely <label for="da">だ</label> since, and tired <label for="de">で</label> <label for="mo">も</label> <label for="nai">な</label>since, to the point of death stomach <label for="ga">が</label> empty<label for="_te">て</label><label for="iru">い<label for="_ta">た</label></label> <label for="ri">り</label>, throat <label for="ga">が</label> parch<label for="_te">て</label><label for="iru">い<label for="_ta">た</label></label> <label for="ri">り</label>, afraid<label for="_ta">った</label> <label for="ri">り</label> <label for="suru">し<label for="_te">て</label></label><label for="iru">いる</label> did not seem. To all appearances, <label for="hito">人</label> <label for="no">の</label> <label for="sumu"><ruby><rb>住</rb><rp>(</rp><rt>す</rt><rp>)</rp></ruby>む</label> <label for="ji"><ruby><rb>地</rb><rp>(</rp><rt>じ</rt><rp>)</rp></ruby></label> <label for="kara">から</label> <label for="sen">千</label> <label for="mairu">マイル</label> <label for="mo">も</label> <label for="kanata">かなた</label> <label for="no">の</label> <label for="sabaku">砂漠</label> <label for="no">の</label> middle <label for="de">で</label> lost child <label for="ni">に</label> become<label for="_ta">た</label> <label for="to">と</label> <label for="iu">いう</label> indication <label for="de">で</label> <label for="ha">は</label> <label for="nai">ない</label> <label for="no">の</label> <label for="da">だ</label>. At last could open my mouth <label for="youni">ように</label> become <label for="to">と</label>, <label for="boku">僕</label> <label for="ha">は</label> <label for="sono">その</label> child <label for="ni">に</label> ask<label for="_ta">た</label>:</p>
+
+<p>“But... <label for="kimi">きみ</label> <label for="ha">は</label> here <label for="de">で</label> what <label for="wo">を</label> <label for="suru">し<label for="_te">て</label></label><label for="iru">る</label> <label for="no">の</label>?”
+
+<p><label for="demo">でも</label> <label for="sono">その</label> child <label for="ha">は</label>, some weighty<label for="na">な</label> matter <label for="no">の</label> <label for="youni">ように</label>, quiet<label for="na">な</label> voice <label for="de">で</label> softly repeat only <label for="da">だ<label for="_ta">った</label></label>:</p>
+
+<p>“<label for="onegai">おねがい</label>... <label for="hitsuji">ヒツジ</label> <label for="no">の</label> <label for="e">絵</label> <label for="wo">を</label> <label for="kaku">描い<label for="_te">て</label></label>!”</p>
+
+<p>Mysterious<label for="na">な</label> matter <label for="demo">でも</label>, too overpowering と, <label for="hito">人</label> <label for="ha">は</label> disobey<label for="nai">なく</label> does. <label for="hito">人</label> <label for="no">の</label> <label for="sumu">住む</label> <label for="ji">地</label> <label for="kara">から</label> <label for="sen">千</label> <label for="mairu">マイル</label> <label for="mo">も</label> <label for="no">の</label> <label for="de">で</label>, death <label for="no">の</label> danger <label for="ni">に</label> expose<label for=""><label for="_reru">され<label for="_te">て</label></label></label><label for="iru">いる</label> <label for="toki">とき</label> <label for="ni">に</label>, absurd<label for="_te">て</label><label for="iru">いる</label> <label for="to">と</label> <label for="boku">僕</label> <label for="ha">は</label> think while <label for="mo">も</label>, <label for="poketto">ポケット</label> <label for="kara">から</label> <label for="ichi"><ruby><rb>一</rb><rp>(</rp><rt>いち</rt><rp>)</rp></ruby></label><label for="mai"><ruby><rb>枚</rb><rp>(</rp><rt>まい</rt><rp>)</rp></ruby></label> <label for="no">の</label> paper <label for="to">と</label> fountain pen <label for="wo">を</label> <label for="toru">とり</label><label for="dasu">だし<label for="_ta">た</label></label>. <label for="da">だ</label> <label for="ga">が</label> then, my focused study<label for="suru">し<label for="_te">て</label></label> <label for="kuru">き<label for="_ta">た</label></label> <label for="no">の</label> <label for="ha">は</label>, geography <label for="to">と</label> history <label for="to">と</label> arithmetic <label for="to">と</label> grammar <label for="da">だ<label for="_ta">った</label></label> <label for="koto">こと</label> <label for="wo">を</label> remembering, <label for="sono">その</label> boy <label for="ni">に</label> (a little crossly <label for="suru">し</label> while), <label for="e">絵</label> <label for="ha">は</label> <label for="kaku">描<label for="_eru">け<label for="_nai">ない</label></label></label>, <label for="to">と</label> tell<label for="_ta">た</label>. <label for="otoko"><ruby><rb>男</rb><rp>(</rp><rt>おとこ</rt><rp>)</rp></ruby></label><label for="no">の</label><label for="ko"><ruby><rb>子</rb><rp>(</rp><rt>こ</rt><rp>)</rp></ruby></label> <label for="ha">は</label> <label for="kou">こう</label> reply<label for="_ta">た</label>:</p>
+
+<p>“<label for="sonna">そんな</label> <label for="no">の</label> okay. <label for="hitsuji">ヒツジ</label> <label for="no">の</label> <label for="e">絵</label> <label for="wo">を</label> <label for="kaku">描い<label for="_te">て</label></label>...”</p>
+
+<p><label for="hitsuji">ヒツジ</label> <label for="no">の</label> <label for="e">絵</label> or anything like that <label for="kaku">描い<label for="_ta">た</label></label> <label for="koto">こと</label> <label for="ga">が</label> <label for="nai">なか<label for="_ta">った</label></label> but; so <label for="boku">僕</label> <label for="ha">は</label> myself <label for="ni">に</label> <label for="kaku">描<label for="_eru">ける</label></label> only two <label for="no">の</label> <label for="e">絵</label> <label for="no">の</label> among <label for="no">の</label>, one <label for="wo">を</label> <label for="sono">その</label> <label for="ko">子</label> <label for="ni">に</label> <label for="kaku">描い<label for="_te">て</label></label> <label for="miru">み<label for="_seru">せ<label for="_ta">た</label></label></label>. That is, <label for="naka">なか</label> <label for="ga">が</label> <label for="miru">見<label for="_eru">え<label for="_nai">ない</label></label></label> <label for="daija">大蛇</label><label for="boa">ボア</label> <label for="da">だ</label>.
+
+<label for="suru">する</label> <label for="to">と</label> <label for="otoko">男</label><label for="no">の</label><label for="ko">子</label> <label for="ha">は</label> <label for="kou">こう</label> <label for="iu"><ruby><rb>言</rb><rp>(</rp><rt>い</rt><rp>)</rp></ruby><label for="_te">って</label></label>, <label for="boku">僕</label> <label for="wo">を</label> very surprised <label for="suru">さ<label for="_seru">せ<label for="_ta">た</label></label></label>.</p>
+
+<p>“No, no! <label for="boa">ボア</label> <label for="ni">に</label> swallow<label for="_reru">れ<label for="_ta">た</label></label> elephant things like want<label for="_nai">ない</label> <label for="yo">よ</label>. <label for="boa">ボア</label> <label for="ha">は</label> very dangerous <label for="da">だ</label>, and, elephant <label for="ha">は</label> very cumbersome. <label for="boku">ぼく</label> <label for="no">の</label> place <label for="ha">は</label>, <label for="totemo">とっても</label> small <label for="n">ん</label> <label for="da">だ</label>. I need a <label for="hitsuji">ヒツジ</label> <label for="na">な</label> <label for="no">の</label>. <label for="hitsuji">ヒツジ</label> <label for="no">の</label> <label for="e">絵</label> <label for="wo">を</label> <label for="kaku">描い<label for="_te">て</label></label>.”</p>
+
+<p>So then <label for="boku">僕</label> <label for="ha">は</label>, <label for="kaku">描い<label for="_ta">た</label></label>:</p>
+
+<p><img src="images/2b.jpg"/></p>
+
+<p><label for="otoko">男</label><label for="no">の</label><label for="ko">子</label> carefully look at<label for="_te">て</label>, <label for="iu">言<label for="_ta">った</label></label>,</p>
+
+<p>“No! <label for="kono">この</label> <label for="hitsuji">ヒツジ</label>, already sickness <label for="de">で</label> weaken<label for="_te">って</label><label for="iru">る</label>. Different <label for="no">の</label> <label for="wo">を</label> <label for="kaku">描い<label for="_te">て</label></label>.”</p>
+
+<p><label for="boku">僕</label> <label for="ha">は</label> <label for="kaku">描く</label>:</p>
+
+<p><img src="images/2c.jpg"/></p>
+
+<p><label for="otoko">男</label><label for="no">の</label><label for="ko">子</label> <label for="ha">は</label>, this <label for="wo">を</label> worried about <label for="youni">ように</label>, grin <label for="suru">する</label> <label for="to">と</label>, simply <label for="iu">言<label for="_ta">った</label></label>,</p>
+
+<p>“<label for="nee">ねえ</label>... <label for="kore">これ</label> <label for="ha">は</label> normal <label for="no">の</label> <label for="hitsuji">ヒツジ</label> <label for="da">じゃ<label for="_nai">なく<label for="_te">て</label></label></label>, ram <label for="da">だ</label> <label for="yo">よ</label>. Horns <label for="ga">が</label> <label for="aru">ある</label> <label for="desu">で<label for="_you">しょ</label></label>...”</p>
+
+<p><label for="boku">僕</label> <label for="ha">は</label> again <label for="kaku">描き</label> redo<label for="_ta">た</label>:</p>
+
+<p><img src="images/2d.jpg"/></p>
+
+<p>But <label for="sore">それ</label> <label for="mo">も</label>, earlier <label for="no">の</label> two <label for="to">と</label> <label for="onaji"><ruby><rb>同</rb><rp>(</rp><rt>おな</rt><rp>)</rp></ruby>じ</label> <label for="youni">ように</label>, unusable <label for="to">と</label> <label for="iu">言<label for="_reru">われ<label for="_ta">た</label></label></label>.</p>
+
+<p>“Too old<label for="_te">て</label><label for="iru">る</label> <label for="yo">よ</label>. Long <label for="ikiru">生き</label> <label for="suru">する</label> <label for="hitsuji">ヒツジ</label> <label for="ga">が</label> want <label for="n">ん</label> <label for="da">だ</label>.”</p>
+
+<p><label for="boku">僕</label> <label for="ha">は</label> finally patience endure<label for="_nai">なく</label> become<label for="_ta">った</label>. Quickly <label for="enjin">エンジン</label> <label for="wo">を</label>disassembly<label for="suru">し<label for="_te">て</label></label> must  <label for="to">と</label> <label for="iu">いう</label> <label for="no">の</label> <label for="ni">に</label>. So, the next <label for="e">絵</label> <label for="wo">を</label> urgent <label for="de">で</label> <label for="kaku">描く</label> <label for="to">と</label>, explain<label for="_ta">た</label>.</p>
+
+<p><img src="images/2e.jpg"/></p>
+
+<p>“This is a box. <label for="kimi">きみ</label> <label for="ga">が</label> want <label for="hitsuji">ヒツジ</label> <label for="ha">は</label>, <label for="kono">この</label> <label for="naka">なか</label> <label for="ni">に</label> <label for="iru">いる</label> <label for="yo">よ</label>.”</p>
+
+<p><label for="suru">する</label> <label for="to">と</label> how <label for="da">だ<label for="_you">ろう</label></label>, my young judge <label for="no">の</label> face <label for="ga">が</label>, suddenly bright <label for="naru">な<label for="_ta">った</label></label> <label for="no">の</label> <label for="da">だ</label>.</p>
+
+<p>“<label for="kore">これ</label> <label for="da">だ</label> <label for="yo">よ</label>, <label for="boku">ぼく</label> <label for="ga">が</label> want<label for="_ta">った</label> <label for="no">の</label> <label for="ha">は</label>! <label for="kono">この</label> <label for="hitsuji">ヒツジ</label>, grass <label for="wo">を</label> enough to <label for="taberu"><ruby><rb>食</rb><rp>(</rp><rt>た</rt><rp>)</rp></ruby>べる</label> <label for="ka">か</label> <label for="na">な</label>?”</p>
+
+<p>“<label for="doushite">どうして</label>?”</p>
+
+<p>“Because, <label for="boku">ぼく</label> <label for="no">の</label> place, <label for="totemo">とっても</label> <label for="chiisai"><ruby><rb>小</rb><rp>(</rp><rt>ちい</rt><rp>)</rp></ruby>さい</label>...”</p>
+
+<p>“Okay <label for="da">だ</label> <label for="yo">よ</label>, I'm sure. <label for="kimi">きみ</label> <label for="ni">に</label> give<label for="_ta">た</label> <label for="no">の</label> <label for="ha">は</label>, <label for="totemo">とっても</label> <label for="chiisai">小さい</label> <label for="hitsuji">ヒツジ</label> <label for="da">だ</label> thing.”</p>
+
+<p><label for="otoko">男</label><label for="no">の</label><label for="ko">子</label> <label for="ha">は</label>, <label for="e">絵</label> <label for="wo">を</label> took a look:</p>
+
+<p>“So <label for="chiisai">小さく<label for="_nai">ない</label></label> <label for="yo">よ</label>... Look! Sleep<label for="_ta">った</label>...”</p>
+
+<p>And that was how <label for="boku">僕</label> <label for="ha">は</label> <label for="kono">この</label> <label for="chiisai">小さ</label><label for="na">な</label> Prince<label for="sama">さま</label> <label for="to">と</label> met.</div>
+
+</body>
+</html>
+
