@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="UTF-8">
+<title>FrWz | Pure CSS chessboard</title>
+
+<link rel="stylesheet" href="standard.css">
+
+</head>
+<body>
+
+<style>
+.mb026:checked~.ii .br1,.mb027:checked~.ii .br1,.mb028:checked~.ii .br1,.mb029:checked~.ii .br1,.mb030:checked~.ii .br1,.mb031:checked~.ii .br1,.mb032:checked~.ii .br1,.mb033:checked~.ii .br1,.mb034:checked~.ii .br1,.mb035:checked~.ii .br1,.mb036:checked~.ii .br1,.mb037:checked~.ii .br1,.mb038:checked~.ii .br1,.mb039:checked~.ii .br1,.mb040:checked~.ii .br1,.wp1{left:0px;top:288px} .mb026:checked~.ii .wp1,.mw027:checked~.ii .wp1,.mw028:checked~.ii .wp1,.mw029:checked~.ii .wp1,.mw030:checked~.ii .wp1,.mw031:checked~.ii .wp1,.mw032:checked~.ii .wp1,.mw033:checked~.ii .wp1,.mw034:checked~.ii .wp1,.mw035:checked~.ii .wp1,.mw036:checked~.ii .wp1,.mw037:checked~.ii .wp1,.mw038:checked~.ii .wp1,.mw039:checked~.ii .wp1,.mw040:checked~.ii .wp1,.mw041:checked~.ii .wp1,.mb015:checked~.ii .wp2,.mw016:checked~.ii .wp2,.mw017:checked~.ii .wp2,.mw018:checked~.ii .wp2,.mw019:checked~.ii .wp2,.mw020:checked~.ii .wp2,.mw021:checked~.ii .wp2,.mw022:checked~.ii .wp2,.mw023:checked~.ii .wp2,.mw024:checked~.ii .wp2,.mw025:checked~.ii .wp2,.mw026:checked~.ii .wp2,.mw027:checked~.ii .wp2,.mw028:checked~.ii .wp2,.mw029:checked~.ii .wp2,.mw030:checked~.ii .wp2,.mw031:checked~.ii .wp2,.mw032:checked~.ii .wp2,.mw033:checked~.ii .wp2,.mw034:checked~.ii .wp2,.mw035:checked~.ii .wp2,.mw036:checked~.ii .wp2,.mw037:checked~.ii .wp2,.mw038:checked~.ii .wp2,.mw039:checked~.ii .wp2,.mw040:checked~.ii .wp2,.mw041:checked~.ii .wp2,.mb006:checked~.ii .wp3,.mw007:checked~.ii .wp3,.mw008:checked~.ii .wp3,.mw009:checked~.ii .wp3,.mw010:checked~.ii .wp3,.mw011:checked~.ii .wp3,.mw012:checked~.ii .wp3,.mw013:checked~.ii .wp3,.mw014:checked~.ii .wp3,.mw015:checked~.ii .wp3,.mw016:checked~.ii .wp3,.mw017:checked~.ii .wp3,.mw018:checked~.ii .wp3,.mw019:checked~.ii .wp3,.mw020:checked~.ii .wp3,.mw021:checked~.ii .wp3,.mw022:checked~.ii .wp3,.mw023:checked~.ii .wp3,.mw024:checked~.ii .wp3,.mw025:checked~.ii .wp3,.mw026:checked~.ii .wp3,.mw027:checked~.ii .wp3,.mw028:checked~.ii .wp3,.mw029:checked~.ii .wp3,.mw030:checked~.ii .wp3,.mw031:checked~.ii .wp3,.mw032:checked~.ii .wp3,.mw033:checked~.ii .wp3,.mw034:checked~.ii .wp3,.mw035:checked~.ii .wp3,.mw036:checked~.ii .wp3,.mw037:checked~.ii .wp3,.mw038:checked~.ii .wp3,.mw039:checked~.ii .wp3,.mw040:checked~.ii .wp3,.mw041:checked~.ii .wp3,.mb020:checked~.ii .wp4,.mw021:checked~.ii .wp4,.mw022:checked~.ii .wp4,.mw023:checked~.ii .wp4,.mw024:checked~.ii .wp4,.mw025:checked~.ii .wp4,.mw026:checked~.ii .wp4,.mw027:checked~.ii .wp4,.mw028:checked~.ii .wp4,.mw029:checked~.ii .wp4,.mw030:checked~.ii .wp4,.mw031:checked~.ii .wp4,.mw032:checked~.ii .wp4,.mw033:checked~.ii .wp4,.mw034:checked~.ii .wp4,.mw035:checked~.ii .wp4,.mw036:checked~.ii .wp4,.mw037:checked~.ii .wp4,.mw038:checked~.ii .wp4,.mw039:checked~.ii .wp4,.mw040:checked~.ii .wp4,.mw041:checked~.ii .wp4,.mb013:checked~.ii .wp5,.mw014:checked~.ii .wp5,.mw015:checked~.ii .wp5,.mw016:checked~.ii .wp5,.mw017:checked~.ii .wp5,.mw018:checked~.ii .wp5,.mw019:checked~.ii .wp5,.mw020:checked~.ii .wp5,.mw021:checked~.ii .wp5,.mw022:checked~.ii .wp5,.mw023:checked~.ii .wp5,.mw024:checked~.ii .wp5,.mw025:checked~.ii .wp5,.mw026:checked~.ii .wp5,.mw027:checked~.ii .wp5,.mw028:checked~.ii .wp5,.mw029:checked~.ii .wp5,.mw030:checked~.ii .wp5,.mw031:checked~.ii .wp5,.mw032:checked~.ii .wp5,.mw033:checked~.ii .wp5,.mw034:checked~.ii .wp5,.mw035:checked~.ii .wp5,.mw036:checked~.ii .wp5,.mw037:checked~.ii .wp5,.mw038:checked~.ii .wp5,.mw039:checked~.ii .wp5,.mw040:checked~.ii .wp5,.mw041:checked~.ii .wp5,.mb027:checked~.ii .wp6,.mw028:checked~.ii .wp6,.mw029:checked~.ii .wp6,.mw030:checked~.ii .wp6,.mw031:checked~.ii .wp6,.mw032:checked~.ii .wp6,.mw033:checked~.ii .wp6,.mw034:checked~.ii .wp6,.mw035:checked~.ii .wp6,.mw036:checked~.ii .wp6,.mw037:checked~.ii .wp6,.mw038:checked~.ii .wp6,.mw039:checked~.ii .wp6,.mw040:checked~.ii .wp6,.mw041:checked~.ii .wp6,.mb025:checked~.ii .wr1,.mw026:checked~.ii .wr1,.mw027:checked~.ii .wr1,.mw028:checked~.ii .wr1,.mw029:checked~.ii .wr1,.mw030:checked~.ii .wr1,.mw031:checked~.ii .wr1,.mw032:checked~.ii .wr1,.mw033:checked~.ii .wr1,.mw034:checked~.ii .wr1,.mw035:checked~.ii .wr1,.mw036:checked~.ii .wr1,.mw037:checked~.ii .wr1,.mw038:checked~.ii .wr1,.mw039:checked~.ii .wr1,.mw040:checked~.ii .wr1,.mw041:checked~.ii .wr1,.mb012:checked~.ii .wn1,.mw013:checked~.ii .wn1,.mw014:checked~.ii .wn1,.mw015:checked~.ii .wn1,.mw016:checked~.ii .wn1,.mw017:checked~.ii .wn1,.mw018:checked~.ii .wn1,.mw019:checked~.ii .wn1,.mw020:checked~.ii .wn1,.mw021:checked~.ii .wn1,.mw022:checked~.ii .wn1,.mw023:checked~.ii .wn1,.mw024:checked~.ii .wn1,.mw025:checked~.ii .wn1,.mw026:checked~.ii .wn1,.mw027:checked~.ii .wn1,.mw028:checked~.ii .wn1,.mw029:checked~.ii .wn1,.mw030:checked~.ii .wn1,.mw031:checked~.ii .wn1,.mw032:checked~.ii .wn1,.mw033:checked~.ii .wn1,.mw034:checked~.ii .wn1,.mw035:checked~.ii .wn1,.mw036:checked~.ii .wn1,.mw037:checked~.ii .wn1,.mw038:checked~.ii .wn1,.mw039:checked~.ii .wn1,.mw040:checked~.ii .wn1,.mw041:checked~.ii .wn1,.mb023:checked~.ii .wb1,.mw024:checked~.ii .wb1,.mw025:checked~.ii .wb1,.mw026:checked~.ii .wb1,.mw027:checked~.ii .wb1,.mw028:checked~.ii .wb1,.mw029:checked~.ii .wb1,.mw030:checked~.ii .wb1,.mw031:checked~.ii .wb1,.mw032:checked~.ii .wb1,.mw033:checked~.ii .wb1,.mw034:checked~.ii .wb1,.mw035:checked~.ii .wb1,.mw036:checked~.ii .wb1,.mw037:checked~.ii .wb1,.mw038:checked~.ii .wb1,.mw039:checked~.ii .wb1,.mw040:checked~.ii .wb1,.mw041:checked~.ii .wb1,.mb018:checked~.ii .wb2,.mw019:checked~.ii .wb2,.mw020:checked~.ii .wb2,.mw021:checked~.ii .wb2,.mw022:checked~.ii .wb2,.mw023:checked~.ii .wb2,.mw024:checked~.ii .wb2,.mw025:checked~.ii .wb2,.mw026:checked~.ii .wb2,.mw027:checked~.ii .wb2,.mw028:checked~.ii .wb2,.mw029:checked~.ii .wb2,.mw030:checked~.ii .wb2,.mw031:checked~.ii .wb2,.mw032:checked~.ii .wb2,.mw033:checked~.ii .wb2,.mw034:checked~.ii .wb2,.mw035:checked~.ii .wb2,.mw036:checked~.ii .wb2,.mw037:checked~.ii .wb2,.mw038:checked~.ii .wb2,.mw039:checked~.ii .wb2,.mw040:checked~.ii .wb2,.mw041:checked~.ii .wb2,.mb028:checked~.ii .wr2,.mw029:checked~.ii .wr2,.mw030:checked~.ii .wr2,.mw031:checked~.ii .wr2,.mw032:checked~.ii .wr2,.mw033:checked~.ii .wr2,.mw034:checked~.ii .wr2,.mw035:checked~.ii .wr2,.mw036:checked~.ii .wr2,.mw037:checked~.ii .wr2,.mw038:checked~.ii .wr2,.mw039:checked~.ii .wr2,.mw040:checked~.ii .wr2,.mw041:checked~.ii .wr2,.mw013:checked~.ii .bn1,.mb013:checked~.ii .bn1,.mb014:checked~.ii .bn1,.mb015:checked~.ii .bn1,.mb016:checked~.ii .bn1,.mb017:checked~.ii .bn1,.mb018:checked~.ii .bn1,.mb019:checked~.ii .bn1,.mb020:checked~.ii .bn1,.mb021:checked~.ii .bn1,.mb022:checked~.ii .bn1,.mb023:checked~.ii .bn1,.mb024:checked~.ii .bn1,.mb025:checked~.ii .bn1,.mb026:checked~.ii .bn1,.mb027:checked~.ii .bn1,.mb028:checked~.ii .bn1,.mb029:checked~.ii .bn1,.mb030:checked~.ii .bn1,.mb031:checked~.ii .bn1,.mb032:checked~.ii .bn1,.mb033:checked~.ii .bn1,.mb034:checked~.ii .bn1,.mb035:checked~.ii .bn1,.mb036:checked~.ii .bn1,.mb037:checked~.ii .bn1,.mb038:checked~.ii .bn1,.mb039:checked~.ii .bn1,.mb040:checked~.ii .bn1,.mb041:checked~.ii .bn1,.mw018:checked~.ii .bq,.mb018:checked~.ii .bq,.mb019:checked~.ii .bq,.mb020:checked~.ii .bq,.mb021:checked~.ii .bq,.mb022:checked~.ii .bq,.mb023:checked~.ii .bq,.mb024:checked~.ii .bq,.mb025:checked~.ii .bq,.mb026:checked~.ii .bq,.mb027:checked~.ii .bq,.mb028:checked~.ii .bq,.mb029:checked~.ii .bq,.mb030:checked~.ii .bq,.mb031:checked~.ii .bq,.mb032:checked~.ii .bq,.mb033:checked~.ii .bq,.mb034:checked~.ii .bq,.mb035:checked~.ii .bq,.mb036:checked~.ii .bq,.mb037:checked~.ii .bq,.mb038:checked~.ii .bq,.mb039:checked~.ii .bq,.mb040:checked~.ii .bq,.mb041:checked~.ii .bq,.mw030:checked~.ii .br2,.mb030:checked~.ii .br2,.mb031:checked~.ii .br2,.mb032:checked~.ii .br2,.mb033:checked~.ii .br2,.mb034:checked~.ii .br2,.mb035:checked~.ii .br2,.mb036:checked~.ii .br2,.mb037:checked~.ii .br2,.mb038:checked~.ii .br2,.mb039:checked~.ii .br2,.mb040:checked~.ii .br2,.mb041:checked~.ii .br2,.mw025:checked~.ii .bp1,.mb025:checked~.ii .bp1,.mb026:checked~.ii .bp1,.mb027:checked~.ii .bp1,.mb028:checked~.ii .bp1,.mb029:checked~.ii .bp1,.mb030:checked~.ii .bp1,.mb031:checked~.ii .bp1,.mb032:checked~.ii .bp1,.mb033:checked~.ii .bp1,.mb034:checked~.ii .bp1,.mb035:checked~.ii .bp1,.mb036:checked~.ii .bp1,.mb037:checked~.ii .bp1,.mb038:checked~.ii .bp1,.mb039:checked~.ii .bp1,.mb040:checked~.ii .bp1,.mb041:checked~.ii .bp1,.mw007:checked~.ii .bp4,.mb007:checked~.ii .bp4,.mb008:checked~.ii .bp4,.mb009:checked~.ii .bp4,.mb010:checked~.ii .bp4,.mb011:checked~.ii .bp4,.mb012:checked~.ii .bp4,.mb013:checked~.ii .bp4,.mb014:checked~.ii .bp4,.mb015:checked~.ii .bp4,.mb016:checked~.ii .bp4,.mb017:checked~.ii .bp4,.mb018:checked~.ii .bp4,.mb019:checked~.ii .bp4,.mb020:checked~.ii .bp4,.mb021:checked~.ii .bp4,.mb022:checked~.ii .bp4,.mb023:checked~.ii .bp4,.mb024:checked~.ii .bp4,.mb025:checked~.ii .bp4,.mb026:checked~.ii .bp4,.mb027:checked~.ii .bp4,.mb028:checked~.ii .bp4,.mb029:checked~.ii .bp4,.mb030:checked~.ii .bp4,.mb031:checked~.ii .bp4,.mb032:checked~.ii .bp4,.mb033:checked~.ii .bp4,.mb034:checked~.ii .bp4,.mb035:checked~.ii .bp4,.mb036:checked~.ii .bp4,.mb037:checked~.ii .bp4,.mb038:checked~.ii .bp4,.mb039:checked~.ii .bp4,.mb040:checked~.ii .bp4,.mb041:checked~.ii .bp4,.mw014:checked~.ii .bp5,.mb014:checked~.ii .bp5,.mb015:checked~.ii .bp5,.mb016:checked~.ii .bp5,.mb017:checked~.ii .bp5,.mb018:checked~.ii .bp5,.mb019:checked~.ii .bp5,.mb020:checked~.ii .bp5,.mb021:checked~.ii .bp5,.mb022:checked~.ii .bp5,.mb023:checked~.ii .bp5,.mb024:checked~.ii .bp5,.mb025:checked~.ii .bp5,.mb026:checked~.ii .bp5,.mb027:checked~.ii .bp5,.mb028:checked~.ii .bp5,.mb029:checked~.ii .bp5,.mb030:checked~.ii .bp5,.mb031:checked~.ii .bp5,.mb032:checked~.ii .bp5,.mb033:checked~.ii .bp5,.mb034:checked~.ii .bp5,.mb035:checked~.ii .bp5,.mb036:checked~.ii .bp5,.mb037:checked~.ii .bp5,.mb038:checked~.ii .bp5,.mb039:checked~.ii .bp5,.mb040:checked~.ii .bp5,.mb041:checked~.ii .bp5{display:none} .wp2{left:48px;top:288px} .mw013:checked~.ii .wp2,.mw014:checked~.ii .wp2,.mw015:checked~.ii .wp2,.mb012:checked~.ii .bn1,.mb015:checked~.ii .bn2,.mb016:checked~.ii .bn2,.mb017:checked~.ii .bn2,.mb018:checked~.ii .bn2,.mb022:checked~.ii .bn2,.mb023:checked~.ii .bn2,.mb024:checked~.ii .bn2,.mb040:checked~.ii .bn2,.mb041:checked~.ii .bn2,.wn1{left:96px;top:240px} .mw000:checked~.ii .wp3,.mw001:checked~.ii .wp3,.mb041:checked~.ii .br1{left:96px;top:288px} .mw007:checked~.ii .wq,.mw008:checked~.ii .wq,.mw009:checked~.ii .wq,.mw015:checked~.ii .wb2,.mw016:checked~.ii .wb2,.mw017:checked~.ii .wb2,.mw018:checked~.ii .wb2,.mb006:checked~.ii .bp4,.wp3,.bb1{left:96px;top:192px} .mw000:checked~.ii .wp4,.mw001:checked~.ii .wp4,.mw002:checked~.ii .wp4,.mw003:checked~.ii .wp4{left:144px;top:288px} .mb020:checked~.ii .bn2,.wp4{left:144px;top:192px} .mb019:checked~.ii .bn2,.mb021:checked~.ii .bn2,.mb039:checked~.ii .bn2,.wp5{left:192px;top:288px} .mw008:checked~.ii .wp5,.mw009:checked~.ii .wp5,.mw010:checked~.ii .wp5,.mw011:checked~.ii .wp5,.mw012:checked~.ii .wp5,.mw013:checked~.ii .wp5,.mb013:checked~.ii .bn2,.mb014:checked~.ii .bn2,.mb031:checked~.ii .bn2,.mb032:checked~.ii .bn2,.mb033:checked~.ii .bn2,.mb034:checked~.ii .bn2,.mb035:checked~.ii .bn2{left:192px;top:192px} .mb027:checked~.ii .bn2,.mb028:checked~.ii .bn2,.mb029:checked~.ii .bn2,.mb030:checked~.ii .bn2,.wp6{left:240px;top:288px} .wp7{left:288px;top:288px} .mw027:checked~.ii .wk,.mw028:checked~.ii .wk,.mw029:checked~.ii .wk,.mw030:checked~.ii .wk,.mw031:checked~.ii .wk,.mw032:checked~.ii .wk,.mw033:checked~.ii .wk,.mw034:checked~.ii .wk,.wp8{left:336px;top:288px} .mw026:checked~.ii .wp8,.mw027:checked~.ii .wp8,.mw028:checked~.ii .wp8,.mw029:checked~.ii .wp8,.mw030:checked~.ii .wp8,.mw031:checked~.ii .wp8,.mw032:checked~.ii .wp8{left:336px;top:240px} .mw033:checked~.ii .wp8,.mw034:checked~.ii .wp8,.mw035:checked~.ii .wp8,.mw036:checked~.ii .wp8,.mw037:checked~.ii .wp8,.mw038:checked~.ii .wp8,.mw039:checked~.ii .wp8,.mw040:checked~.ii .wp8,.mw041:checked~.ii .wp8{left:336px;top:192px} .mw000:checked~.ii .wr1,.mw001:checked~.ii .wr1,.mw002:checked~.ii .wr1,.mw003:checked~.ii .wr1,.mw004:checked~.ii .wr1,.mw005:checked~.ii .wr1,.mw006:checked~.ii .wr1,.mw007:checked~.ii .wr1,.mw008:checked~.ii .wr1{left:0px;top:336px} .mw000:checked~.ii .wq,.mw001:checked~.ii .wq,.mw002:checked~.ii .wq,.mw003:checked~.ii .wq,.mw004:checked~.ii .wq,.mw005:checked~.ii .wq,.mw038:checked~.ii .wk,.mb025:checked~.ii .bn2,.mb026:checked~.ii .bn2,.wr1{left:144px;top:336px} .mw000:checked~.ii .wn1,.mw001:checked~.ii .wn1,.mw002:checked~.ii .wn1,.mw040:checked~.ii .wk{left:48px;top:336px} .mw000:checked~.ii .wb1,.mw001:checked~.ii .wb1,.mw002:checked~.ii .wb1,.mw003:checked~.ii .wb1,.mw004:checked~.ii .wb1,.mw039:checked~.ii .wk,.mw041:checked~.ii .wk{left:96px;top:336px} .wb1{left:240px;top:192px} .mw011:checked~.ii .wb1,.mw012:checked~.ii .wb1,.mw013:checked~.ii .wb1{left:288px;top:144px} .mw014:checked~.ii .wb1,.mw015:checked~.ii .wb1,.bp5{left:192px;top:48px} .mw016:checked~.ii .wb1,.mw017:checked~.ii .wb1,.mw010:checked~.ii .wq,.mw011:checked~.ii .wq,.mb035:checked~.ii .bb2,.mb036:checked~.ii .bb2{left:96px;top:144px} .mw018:checked~.ii .wb1,.mw019:checked~.ii .wb1,.mw020:checked~.ii .wb1,.mw021:checked~.ii .wb1,.mw022:checked~.ii .wb1,.mw023:checked~.ii .wb1,.mw025:checked~.ii .wq,.mw026:checked~.ii .wq,.mw027:checked~.ii .wq,.mw028:checked~.ii .wq,.mb009:checked~.ii .bn1,.mb010:checked~.ii .bn1,.mb014:checked~.ii .bq,.mb015:checked~.ii .bq,.mb016:checked~.ii .bq,.mb017:checked~.ii .bq,.mb023:checked~.ii .bp1,.mb024:checked~.ii .bp1{left:48px;top:96px} .mw006:checked~.ii .wq,.mb038:checked~.ii .bb1,.mb039:checked~.ii .bb1,.mb040:checked~.ii .bb1,.mb041:checked~.ii .bb1{left:48px;top:240px} .wq{left:0px;top:240px} .mw024:checked~.ii .wq,.mb037:checked~.ii .bb2,.mb038:checked~.ii .bb2,.mb039:checked~.ii .bb2,.mb040:checked~.ii .bb2,.mb041:checked~.ii .bb2{left:48px;top:192px} .mw029:checked~.ii .wq,.mw030:checked~.ii .wq,.mw031:checked~.ii .wq,.bq{left:144px;top:0px} .mw032:checked~.ii .wq,.mw033:checked~.ii .wq,.mw034:checked~.ii .wq,.mw035:checked~.ii .wq,.mw036:checked~.ii .wq,.mw037:checked~.ii .wq,.mw038:checked~.ii .wq,.mw039:checked~.ii .wq,.mw040:checked~.ii .wq,.mw041:checked~.ii .wq,.bn1{left:48px;top:0px} .mw030:checked~.ii .wn2,.mw028:checked~.ii .wr2,.mb028:checked~.ii .br2,.mb029:checked~.ii .br2,.wk{left:192px;top:336px} .mw017:checked~.ii .wk,.mw018:checked~.ii .wk,.mw020:checked~.ii .wk,.mw022:checked~.ii .wk,.mw036:checked~.ii .wk,.wb2{left:240px;top:336px} .mw019:checked~.ii .wk,.mw021:checked~.ii .wk,.mw023:checked~.ii .wk,.mw024:checked~.ii .wk,.mw025:checked~.ii .wk,.mw026:checked~.ii .wk,.mw035:checked~.ii .wk,.mw000:checked~.ii .wn2{left:288px;top:336px} .wn2{left:240px;top:240px} .mw034:checked~.ii .wn2,.mw035:checked~.ii .wn2,.mw036:checked~.ii .wn2,.mw037:checked~.ii .wn2,.mw038:checked~.ii .wn2,.mw039:checked~.ii .wn2,.mw040:checked~.ii .wn2,.mw041:checked~.ii .wn2{left:192px;top:144px} .wr2{left:336px;top:336px} .br1{left:0px;top:0px} .mb024:checked~.ii .br1,.mb025:checked~.ii .br1,.mb011:checked~.ii .bn1{left:0px;top:192px} .mb008:checked~.ii .bn1,.bp4{left:144px;top:48px} .mb000:checked~.ii .bb1,.mb001:checked~.ii .bb1,.mb002:checked~.ii .bb1,.mb003:checked~.ii .bb1,.mb004:checked~.ii .bb1,.mb005:checked~.ii .bb1,.mb006:checked~.ii .bb1,.mb007:checked~.ii .bb1,.mb008:checked~.ii .bb1,.mb009:checked~.ii .bb1{left:96px;top:0px} .mb010:checked~.ii .bb1,.mb011:checked~.ii .bb1,.mb012:checked~.ii .bb1,.mb013:checked~.ii .bb1,.mb014:checked~.ii .bb1,.mb015:checked~.ii .bb1,.mb016:checked~.ii .bb1{left:288px;top:192px} .mb017:checked~.ii .bb1{left:192px;top:96px} .mb030:checked~.ii .bb1,.mb031:checked~.ii .bb1,.mb032:checked~.ii .bb1,.mb033:checked~.ii .bb1,.mb034:checked~.ii .bb1,.mb035:checked~.ii .bb1,.mb036:checked~.ii .bb1,.mb037:checked~.ii .bb1,.mb005:checked~.ii .bp4{left:144px;top:144px} .mb000:checked~.ii .bk,.mb001:checked~.ii .bk,.mb002:checked~.ii .bk,.mb003:checked~.ii .bk,.mb016:checked~.ii .br2,.mb017:checked~.ii .br2,.mb018:checked~.ii .br2,.mb019:checked~.ii .br2,.mb020:checked~.ii .br2,.mb021:checked~.ii .br2,.mb022:checked~.ii .br2,.mb023:checked~.ii .br2,.mb024:checked~.ii .br2,.mb025:checked~.ii .br2,.mb026:checked~.ii .br2,.mb027:checked~.ii .br2{left:192px;top:0px} .mb000:checked~.ii .bn2,.bk{left:288px;top:0px} .mb034:checked~.ii .bk,.mb035:checked~.ii .bk,.mb036:checked~.ii .bk,.mb037:checked~.ii .bk,.mb038:checked~.ii .bk,.mb039:checked~.ii .bk,.mb040:checked~.ii .bk,.mb041:checked~.ii .bk,.mb000:checked~.ii .bp7,.mb001:checked~.ii .bp7,.bb2{left:288px;top:48px} .mb000:checked~.ii .bb2,.mb001:checked~.ii .bb2,.mb002:checked~.ii .bb2,.mb029:checked~.ii .bb2,.mb030:checked~.ii .bb2,.mb031:checked~.ii .bb2,.mb032:checked~.ii .bb2,.mb033:checked~.ii .bb2,.mb034:checked~.ii .bb2,.br2{left:240px;top:0px} .bn2{left:240px;top:96px} .mb036:checked~.ii .bn2,.mb037:checked~.ii .bn2,.mb038:checked~.ii .bn2{left:288px;top:240px} .mb000:checked~.ii .br2,.mb001:checked~.ii .br2,.mb002:checked~.ii .br2,.mb003:checked~.ii .br2{left:336px;top:0px} .bp1{left:0px;top:48px} .bp2{left:48px;top:48px} .mb032:checked~.ii .bp2,.mb033:checked~.ii .bp2,.mb034:checked~.ii .bp2,.mb035:checked~.ii .bp2,.mb036:checked~.ii .bp2,.mb037:checked~.ii .bp2,.mb038:checked~.ii .bp2,.mb039:checked~.ii .bp2,.mb040:checked~.ii .bp2,.mb041:checked~.ii .bp2{left:48px;top:144px} .mb000:checked~.ii .bp3,.mb001:checked~.ii .bp3,.mb002:checked~.ii .bp3,.mb003:checked~.ii .bp3,.mb004:checked~.ii .bp3,.mb005:checked~.ii .bp3,.mb006:checked~.ii .bp3{left:96px;top:48px} .bp3{left:96px;top:96px} .bp6{left:240px;top:48px} .bp7{left:288px;top:96px} .bp8{left:336px;top:48px} .mb033:checked~.ii .bp8,.mb034:checked~.ii .bp8,.mb035:checked~.ii .bp8,.mb036:checked~.ii .bp8,.mb037:checked~.ii .bp8,.mb038:checked~.ii .bp8,.mb039:checked~.ii .bp8,.mb040:checked~.ii .bp8,.mb041:checked~.ii .bp8{left:336px;top:144px} #x9egjm001:checked~.mm label[for="x9egjm001"],#x9egjm002:checked~.mm label[for="x9egjm002"],#x9egjm003:checked~.mm label[for="x9egjm003"],#x9egjm004:checked~.mm label[for="x9egjm004"],#x9egjm005:checked~.mm label[for="x9egjm005"],#x9egjm006:checked~.mm label[for="x9egjm006"],#x9egjm007:checked~.mm label[for="x9egjm007"],#x9egjm008:checked~.mm label[for="x9egjm008"],#x9egjm009:checked~.mm label[for="x9egjm009"],#x9egjm010:checked~.mm label[for="x9egjm010"],#x9egjm011:checked~.mm label[for="x9egjm011"],#x9egjm012:checked~.mm label[for="x9egjm012"],#x9egjm013:checked~.mm label[for="x9egjm013"],#x9egjm014:checked~.mm label[for="x9egjm014"],#x9egjm015:checked~.mm label[for="x9egjm015"],#x9egjm016:checked~.mm label[for="x9egjm016"],#x9egjm017:checked~.mm label[for="x9egjm017"],#x9egjm018:checked~.mm label[for="x9egjm018"],#x9egjm019:checked~.mm label[for="x9egjm019"],#x9egjm020:checked~.mm label[for="x9egjm020"],#x9egjm021:checked~.mm label[for="x9egjm021"],#x9egjm022:checked~.mm label[for="x9egjm022"],#x9egjm023:checked~.mm label[for="x9egjm023"],#x9egjm024:checked~.mm label[for="x9egjm024"],#x9egjm025:checked~.mm label[for="x9egjm025"],#x9egjm026:checked~.mm label[for="x9egjm026"],#x9egjm027:checked~.mm label[for="x9egjm027"],#x9egjm028:checked~.mm label[for="x9egjm028"],#x9egjm029:checked~.mm label[for="x9egjm029"],#x9egjm030:checked~.mm label[for="x9egjm030"],#x9egjm031:checked~.mm label[for="x9egjm031"],#x9egjm032:checked~.mm label[for="x9egjm032"],#x9egjm033:checked~.mm label[for="x9egjm033"],#x9egjm034:checked~.mm label[for="x9egjm034"],#x9egjm035:checked~.mm label[for="x9egjm035"],#x9egjm036:checked~.mm label[for="x9egjm036"],#x9egjm037:checked~.mm label[for="x9egjm037"],#x9egjm038:checked~.mm label[for="x9egjm038"],#x9egjm039:checked~.mm label[for="x9egjm039"],#x9egjm040:checked~.mm label[for="x9egjm040"],#x9egjm041:checked~.mm label[for="x9egjm041"],#x9egjm042:checked~.mm label[for="x9egjm042"],#x9egjm043:checked~.mm label[for="x9egjm043"],#x9egjm044:checked~.mm label[for="x9egjm044"],#x9egjm045:checked~.mm label[for="x9egjm045"],#x9egjm046:checked~.mm label[for="x9egjm046"],#x9egjm047:checked~.mm label[for="x9egjm047"],#x9egjm048:checked~.mm label[for="x9egjm048"],#x9egjm049:checked~.mm label[for="x9egjm049"],#x9egjm050:checked~.mm label[for="x9egjm050"],#x9egjm051:checked~.mm label[for="x9egjm051"],#x9egjm052:checked~.mm label[for="x9egjm052"],#x9egjm053:checked~.mm label[for="x9egjm053"],#x9egjm054:checked~.mm label[for="x9egjm054"],#x9egjm055:checked~.mm label[for="x9egjm055"],#x9egjm056:checked~.mm label[for="x9egjm056"],#x9egjm057:checked~.mm label[for="x9egjm057"],#x9egjm058:checked~.mm label[for="x9egjm058"],#x9egjm059:checked~.mm label[for="x9egjm059"],#x9egjm060:checked~.mm label[for="x9egjm060"],#x9egjm061:checked~.mm label[for="x9egjm061"],#x9egjm062:checked~.mm label[for="x9egjm062"],#x9egjm063:checked~.mm label[for="x9egjm063"],#x9egjm064:checked~.mm label[for="x9egjm064"],#x9egjm065:checked~.mm label[for="x9egjm065"],#x9egjm066:checked~.mm label[for="x9egjm066"],#x9egjm067:checked~.mm label[for="x9egjm067"],#x9egjm068:checked~.mm label[for="x9egjm068"],#x9egjm069:checked~.mm label[for="x9egjm069"],#x9egjm070:checked~.mm label[for="x9egjm070"],#x9egjm071:checked~.mm label[for="x9egjm071"],#x9egjm072:checked~.mm label[for="x9egjm072"],#x9egjm073:checked~.mm label[for="x9egjm073"],#x9egjm074:checked~.mm label[for="x9egjm074"],#x9egjm075:checked~.mm label[for="x9egjm075"],#x9egjm076:checked~.mm label[for="x9egjm076"],#x9egjm077:checked~.mm label[for="x9egjm077"],#x9egjm078:checked~.mm label[for="x9egjm078"],#x9egjm079:checked~.mm label[for="x9egjm079"],#x9egjm080:checked~.mm label[for="x9egjm080"],#x9egjm081:checked~.mm label[for="x9egjm081"],#x9egjm082:checked~.mm label[for="x9egjm082"]{color:red} #x9egjm001:checked~.board .sf3,#x9egjm002:checked~.board .sg8,#x9egjm003:checked~.board .sc4,#x9egjm003:checked~.board .sc2,#x9egjm004:checked~.board .sg6,#x9egjm005:checked~.board .sb1,#x9egjm010:checked~.board .sd5,#x9egjm010:checked~.board .sd7,#x9egjm011:checked~.board .sb3,#x9egjm011:checked~.board .sd1,#x9egjm012:checked~.board .sc4,#x9egjm012:checked~.board .sd5,#x9egjm013:checked~.board .sc4,#x9egjm013:checked~.board .sb3,#x9egjm014:checked~.board .sc6,#x9egjm015:checked~.board .se4,#x9egjm015:checked~.board .se2,#x9egjm016:checked~.board .sd7,#x9egjm017:checked~.board .sd1,#x9egjm018:checked~.board .sd7,#x9egjm019:checked~.board .sc4,#x9egjm020:checked~.board .sg4,#x9egjm020:checked~.board .sc8,#x9egjm022:checked~.board .sa4,#x9egjm024:checked~.board .sa4,#x9egjm026:checked~.board .se4,#x9egjm029:checked~.board .sc4,#x9egjm029:checked~.board .sf1,#x9egjm030:checked~.board .se4,#x9egjm032:checked~.board .se8,#x9egjm033:checked~.board .sf1,#x9egjm034:checked~.board .se6,#x9egjm034:checked~.board .sg4,#x9egjm036:checked~.board .sc4,#x9egjm036:checked~.board .se6,#x9egjm037:checked~.board .sf1,#x9egjm038:checked~.board .se2,#x9egjm039:checked~.board .sf1,#x9egjm040:checked~.board .se2,#x9egjm041:checked~.board .sf1,#x9egjm042:checked~.board .se2,#x9egjm043:checked~.board .sf1,#x9egjm044:checked~.board .se2,#x9egjm045:checked~.board .sf1,#x9egjm048:checked~.board .sa4,#x9egjm048:checked~.board .sa8,#x9egjm050:checked~.board .sd1,#x9egjm051:checked~.board .sh3,#x9egjm052:checked~.board .sa2,#x9egjm052:checked~.board .sa4,#x9egjm054:checked~.board .sd1,#x9egjm055:checked~.board .sh1,#x9egjm056:checked~.board .se8,#x9egjm059:checked~.board .sf3,#x9egjm060:checked~.board .sd5,#x9egjm060:checked~.board .sc4,#x9egjm061:checked~.board .sf3,#x9egjm062:checked~.board .se4,#x9egjm064:checked~.board .sb5,#x9egjm064:checked~.board .sb7,#x9egjm065:checked~.board .sh3,#x9egjm066:checked~.board .sh5,#x9egjm066:checked~.board .sh7,#x9egjm067:checked~.board .sf3,#x9egjm068:checked~.board .sg8,#x9egjm071:checked~.board .sf1,#x9egjm072:checked~.board .se4,#x9egjm073:checked~.board .sf1,#x9egjm075:checked~.board .sd1,#x9egjm076:checked~.board .sb3,#x9egjm076:checked~.board .sd5,#x9egjm077:checked~.board .sd1,#x9egjm078:checked~.board .se2,#x9egjm079:checked~.board .sb1,#x9egjm080:checked~.board .se2,#x9egjm081:checked~.board .sb1,#x9egjm082:checked~.board .sc2,#x9egjm082:checked~.board .sa2,#z93gefa{background-color:#fcc} #x9egjm001:checked~.board .sg1,#x9egjm002:checked~.board .sf6,#x9egjm004:checked~.board .sg7,#x9egjm005:checked~.board .sc3,#x9egjm006:checked~.board .sg7,#x9egjm006:checked~.board .sf8,#x9egjm007:checked~.board .sd4,#x9egjm007:checked~.board .sd2,#x9egjm009:checked~.board .sf4,#x9egjm009:checked~.board .sc1,#x9egjm014:checked~.board .sc7,#x9egjm016:checked~.board .sb8,#x9egjm017:checked~.board .sa1,#x9egjm018:checked~.board .sb6,#x9egjm019:checked~.board .sc5,#x9egjm021:checked~.board .sg5,#x9egjm021:checked~.board .sf4,#x9egjm022:checked~.board .sb6,#x9egjm023:checked~.board .sa3,#x9egjm023:checked~.board .sc5,#x9egjm024:checked~.board .sc3,#x9egjm025:checked~.board .sc3,#x9egjm025:checked~.board .sb2,#x9egjm026:checked~.board .sf6,#x9egjm027:checked~.board .se7,#x9egjm027:checked~.board .sg5,#x9egjm028:checked~.board .sb6,#x9egjm028:checked~.board .sd8,#x9egjm030:checked~.board .sc3,#x9egjm031:checked~.board .sc5,#x9egjm031:checked~.board .se7,#x9egjm032:checked~.board .sf8,#x9egjm033:checked~.board .se1,#x9egjm035:checked~.board .sb6,#x9egjm035:checked~.board .sc5,#x9egjm037:checked~.board .sg1,#x9egjm038:checked~.board .sc3,#x9egjm039:checked~.board .sg1,#x9egjm040:checked~.board .sd4,#x9egjm041:checked~.board .sg1,#x9egjm042:checked~.board .sd4,#x9egjm043:checked~.board .sg1,#x9egjm044:checked~.board .sc3,#x9egjm045:checked~.board .sg1,#x9egjm046:checked~.board .sb6,#x9egjm046:checked~.board .sa7,#x9egjm047:checked~.board .sb4,#x9egjm047:checked~.board .sa3,#x9egjm049:checked~.board .sb6,#x9egjm049:checked~.board .sb4,#x9egjm050:checked~.board .sc3,#x9egjm051:checked~.board .sh2,#x9egjm053:checked~.board .sh2,#x9egjm053:checked~.board .sg1,#x9egjm054:checked~.board .sf2,#x9egjm055:checked~.board .se1,#x9egjm056:checked~.board .se1,#x9egjm057:checked~.board .sd8,#x9egjm057:checked~.board .sb6,#x9egjm058:checked~.board .sf8,#x9egjm058:checked~.board .sg7,#x9egjm059:checked~.board .se1,#x9egjm061:checked~.board .se1,#x9egjm062:checked~.board .sf2,#x9egjm063:checked~.board .sb8,#x9egjm063:checked~.board .sd8,#x9egjm065:checked~.board .sh4,#x9egjm067:checked~.board .se5,#x9egjm068:checked~.board .sg7,#x9egjm069:checked~.board .sg1,#x9egjm069:checked~.board .sh2,#x9egjm070:checked~.board .sc5,#x9egjm070:checked~.board .sf8,#x9egjm071:checked~.board .sg1,#x9egjm072:checked~.board .sg3,#x9egjm073:checked~.board .se1,#x9egjm074:checked~.board .sb4,#x9egjm074:checked~.board .sc5,#x9egjm075:checked~.board .se1,#x9egjm077:checked~.board .sc1,#x9egjm078:checked~.board .sg3,#x9egjm079:checked~.board .sc1,#x9egjm080:checked~.board .sc3,#x9egjm081:checked~.board .sc1,#z93gefa{background-color:#f88} </style>
+
+<p style="float:left; font-family:Helvetica,sans-serif"><a href="/">&larr; Home</a></p>
+
+<div class="csschess">
+<div class="chessboard">
+<input type="checkbox" id="x9egjflip" name="flip" class="flip">
+<input type="radio" id="x9egjm000" name="m" class="mw000 mb000 start" checked="checked">
+<label for="x9egjm000"></label>
+<input type="radio" id="x9egjm001" name="m" class="mw001 mb000">
+<label for="x9egjm001"></label>
+<input type="radio" id="x9egjm002" name="m" class="mw001 mb001">
+<label for="x9egjm002"></label>
+<input type="radio" id="x9egjm003" name="m" class="mw002 mb001">
+<label for="x9egjm003"></label>
+<input type="radio" id="x9egjm004" name="m" class="mw002 mb002">
+<label for="x9egjm004"></label>
+<input type="radio" id="x9egjm005" name="m" class="mw003 mb002">
+<label for="x9egjm005"></label>
+<input type="radio" id="x9egjm006" name="m" class="mw003 mb003">
+<label for="x9egjm006"></label>
+<input type="radio" id="x9egjm007" name="m" class="mw004 mb003">
+<label for="x9egjm007"></label>
+<input type="radio" id="x9egjm008" name="m" class="mw004 mb004">
+<label for="x9egjm008"></label>
+<input type="radio" id="x9egjm009" name="m" class="mw005 mb004">
+<label for="x9egjm009"></label>
+<input type="radio" id="x9egjm010" name="m" class="mw005 mb005">
+<label for="x9egjm010"></label>
+<input type="radio" id="x9egjm011" name="m" class="mw006 mb005">
+<label for="x9egjm011"></label>
+<input type="radio" id="x9egjm012" name="m" class="mw006 mb006">
+<label for="x9egjm012"></label>
+<input type="radio" id="x9egjm013" name="m" class="mw007 mb006">
+<label for="x9egjm013"></label>
+<input type="radio" id="x9egjm014" name="m" class="mw007 mb007">
+<label for="x9egjm014"></label>
+<input type="radio" id="x9egjm015" name="m" class="mw008 mb007">
+<label for="x9egjm015"></label>
+<input type="radio" id="x9egjm016" name="m" class="mw008 mb008">
+<label for="x9egjm016"></label>
+<input type="radio" id="x9egjm017" name="m" class="mw009 mb008">
+<label for="x9egjm017"></label>
+<input type="radio" id="x9egjm018" name="m" class="mw009 mb009">
+<label for="x9egjm018"></label>
+<input type="radio" id="x9egjm019" name="m" class="mw010 mb009">
+<label for="x9egjm019"></label>
+<input type="radio" id="x9egjm020" name="m" class="mw010 mb010">
+<label for="x9egjm020"></label>
+<input type="radio" id="x9egjm021" name="m" class="mw011 mb010">
+<label for="x9egjm021"></label>
+<input type="radio" id="x9egjm022" name="m" class="mw011 mb011">
+<label for="x9egjm022"></label>
+<input type="radio" id="x9egjm023" name="m" class="mw012 mb011">
+<label for="x9egjm023"></label>
+<input type="radio" id="x9egjm024" name="m" class="mw012 mb012">
+<label for="x9egjm024"></label>
+<input type="radio" id="x9egjm025" name="m" class="mw013 mb012">
+<label for="x9egjm025"></label>
+<input type="radio" id="x9egjm026" name="m" class="mw013 mb013">
+<label for="x9egjm026"></label>
+<input type="radio" id="x9egjm027" name="m" class="mw014 mb013">
+<label for="x9egjm027"></label>
+<input type="radio" id="x9egjm028" name="m" class="mw014 mb014">
+<label for="x9egjm028"></label>
+<input type="radio" id="x9egjm029" name="m" class="mw015 mb014">
+<label for="x9egjm029"></label>
+<input type="radio" id="x9egjm030" name="m" class="mw015 mb015">
+<label for="x9egjm030"></label>
+<input type="radio" id="x9egjm031" name="m" class="mw016 mb015">
+<label for="x9egjm031"></label>
+<input type="radio" id="x9egjm032" name="m" class="mw016 mb016">
+<label for="x9egjm032"></label>
+<input type="radio" id="x9egjm033" name="m" class="mw017 mb016">
+<label for="x9egjm033"></label>
+<input type="radio" id="x9egjm034" name="m" class="mw017 mb017">
+<label for="x9egjm034"></label>
+<input type="radio" id="x9egjm035" name="m" class="mw018 mb017">
+<label for="x9egjm035"></label>
+<input type="radio" id="x9egjm036" name="m" class="mw018 mb018">
+<label for="x9egjm036"></label>
+<input type="radio" id="x9egjm037" name="m" class="mw019 mb018">
+<label for="x9egjm037"></label>
+<input type="radio" id="x9egjm038" name="m" class="mw019 mb019">
+<label for="x9egjm038"></label>
+<input type="radio" id="x9egjm039" name="m" class="mw020 mb019">
+<label for="x9egjm039"></label>
+<input type="radio" id="x9egjm040" name="m" class="mw020 mb020">
+<label for="x9egjm040"></label>
+<input type="radio" id="x9egjm041" name="m" class="mw021 mb020">
+<label for="x9egjm041"></label>
+<input type="radio" id="x9egjm042" name="m" class="mw021 mb021">
+<label for="x9egjm042"></label>
+<input type="radio" id="x9egjm043" name="m" class="mw022 mb021">
+<label for="x9egjm043"></label>
+<input type="radio" id="x9egjm044" name="m" class="mw022 mb022">
+<label for="x9egjm044"></label>
+<input type="radio" id="x9egjm045" name="m" class="mw023 mb022">
+<label for="x9egjm045"></label>
+<input type="radio" id="x9egjm046" name="m" class="mw023 mb023">
+<label for="x9egjm046"></label>
+<input type="radio" id="x9egjm047" name="m" class="mw024 mb023">
+<label for="x9egjm047"></label>
+<input type="radio" id="x9egjm048" name="m" class="mw024 mb024">
+<label for="x9egjm048"></label>
+<input type="radio" id="x9egjm049" name="m" class="mw025 mb024">
+<label for="x9egjm049"></label>
+<input type="radio" id="x9egjm050" name="m" class="mw025 mb025">
+<label for="x9egjm050"></label>
+<input type="radio" id="x9egjm051" name="m" class="mw026 mb025">
+<label for="x9egjm051"></label>
+<input type="radio" id="x9egjm052" name="m" class="mw026 mb026">
+<label for="x9egjm052"></label>
+<input type="radio" id="x9egjm053" name="m" class="mw027 mb026">
+<label for="x9egjm053"></label>
+<input type="radio" id="x9egjm054" name="m" class="mw027 mb027">
+<label for="x9egjm054"></label>
+<input type="radio" id="x9egjm055" name="m" class="mw028 mb027">
+<label for="x9egjm055"></label>
+<input type="radio" id="x9egjm056" name="m" class="mw028 mb028">
+<label for="x9egjm056"></label>
+<input type="radio" id="x9egjm057" name="m" class="mw029 mb028">
+<label for="x9egjm057"></label>
+<input type="radio" id="x9egjm058" name="m" class="mw029 mb029">
+<label for="x9egjm058"></label>
+<input type="radio" id="x9egjm059" name="m" class="mw030 mb029">
+<label for="x9egjm059"></label>
+<input type="radio" id="x9egjm060" name="m" class="mw030 mb030">
+<label for="x9egjm060"></label>
+<input type="radio" id="x9egjm061" name="m" class="mw031 mb030">
+<label for="x9egjm061"></label>
+<input type="radio" id="x9egjm062" name="m" class="mw031 mb031">
+<label for="x9egjm062"></label>
+<input type="radio" id="x9egjm063" name="m" class="mw032 mb031">
+<label for="x9egjm063"></label>
+<input type="radio" id="x9egjm064" name="m" class="mw032 mb032">
+<label for="x9egjm064"></label>
+<input type="radio" id="x9egjm065" name="m" class="mw033 mb032">
+<label for="x9egjm065"></label>
+<input type="radio" id="x9egjm066" name="m" class="mw033 mb033">
+<label for="x9egjm066"></label>
+<input type="radio" id="x9egjm067" name="m" class="mw034 mb033">
+<label for="x9egjm067"></label>
+<input type="radio" id="x9egjm068" name="m" class="mw034 mb034">
+<label for="x9egjm068"></label>
+<input type="radio" id="x9egjm069" name="m" class="mw035 mb034">
+<label for="x9egjm069"></label>
+<input type="radio" id="x9egjm070" name="m" class="mw035 mb035">
+<label for="x9egjm070"></label>
+<input type="radio" id="x9egjm071" name="m" class="mw036 mb035">
+<label for="x9egjm071"></label>
+<input type="radio" id="x9egjm072" name="m" class="mw036 mb036">
+<label for="x9egjm072"></label>
+<input type="radio" id="x9egjm073" name="m" class="mw037 mb036">
+<label for="x9egjm073"></label>
+<input type="radio" id="x9egjm074" name="m" class="mw037 mb037">
+<label for="x9egjm074"></label>
+<input type="radio" id="x9egjm075" name="m" class="mw038 mb037">
+<label for="x9egjm075"></label>
+<input type="radio" id="x9egjm076" name="m" class="mw038 mb038">
+<label for="x9egjm076"></label>
+<input type="radio" id="x9egjm077" name="m" class="mw039 mb038">
+<label for="x9egjm077"></label>
+<input type="radio" id="x9egjm078" name="m" class="mw039 mb039">
+<label for="x9egjm078"></label>
+<input type="radio" id="x9egjm079" name="m" class="mw040 mb039">
+<label for="x9egjm079"></label>
+<input type="radio" id="x9egjm080" name="m" class="mw040 mb040">
+<label for="x9egjm080"></label>
+<input type="radio" id="x9egjm081" name="m" class="mw041 mb040">
+<label for="x9egjm081"></label>
+<input type="radio" id="x9egjm082" name="m" class="mw041 mb041 end">
+<label for="x9egjm082"></label>
+<label class="starter" for="x9egjm000"></label>
+<label class="ender" for="x9egjm082"></label>
+<label class="flipper" for="x9egjflip"></label>
+
+<table class="board">
+	<tbody><tr><td></td>
+		<td>a</td><td>b</td><td>c</td><td>d</td>
+		<td>e</td><td>f</td><td>g</td><td>h</td>
+	<td></td></tr>
+
+	<tr><td>8</td><td class="sa8">&nbsp;</td><td class="sb8">&nbsp;</td><td class="sc8">&nbsp;</td><td class="sd8">&nbsp;</td><td class="se8">&nbsp;</td><td class="sf8">&nbsp;</td><td class="sg8">&nbsp;</td><td class="sh8">&nbsp;</td><td>8</td></tr>
+<tr><td>7</td><td class="sa7">&nbsp;</td><td class="sb7">&nbsp;</td><td class="sc7">&nbsp;</td><td class="sd7">&nbsp;</td><td class="se7">&nbsp;</td><td class="sf7">&nbsp;</td><td class="sg7">&nbsp;</td><td class="sh7">&nbsp;</td><td>7</td></tr>
+<tr><td>6</td><td class="sa6">&nbsp;</td><td class="sb6">&nbsp;</td><td class="sc6">&nbsp;</td><td class="sd6">&nbsp;</td><td class="se6">&nbsp;</td><td class="sf6">&nbsp;</td><td class="sg6">&nbsp;</td><td class="sh6">&nbsp;</td><td>6</td></tr>
+<tr><td>5</td><td class="sa5">&nbsp;</td><td class="sb5">&nbsp;</td><td class="sc5">&nbsp;</td><td class="sd5">&nbsp;</td><td class="se5">&nbsp;</td><td class="sf5">&nbsp;</td><td class="sg5">&nbsp;</td><td class="sh5">&nbsp;</td><td>5</td></tr>
+<tr><td>4</td><td class="sa4">&nbsp;</td><td class="sb4">&nbsp;</td><td class="sc4">&nbsp;</td><td class="sd4">&nbsp;</td><td class="se4">&nbsp;</td><td class="sf4">&nbsp;</td><td class="sg4">&nbsp;</td><td class="sh4">&nbsp;</td><td>4</td></tr>
+<tr><td>3</td><td class="sa3">&nbsp;</td><td class="sb3">&nbsp;</td><td class="sc3">&nbsp;</td><td class="sd3">&nbsp;</td><td class="se3">&nbsp;</td><td class="sf3">&nbsp;</td><td class="sg3">&nbsp;</td><td class="sh3">&nbsp;</td><td>3</td></tr>
+<tr><td>2</td><td class="sa2">&nbsp;</td><td class="sb2">&nbsp;</td><td class="sc2">&nbsp;</td><td class="sd2">&nbsp;</td><td class="se2">&nbsp;</td><td class="sf2">&nbsp;</td><td class="sg2">&nbsp;</td><td class="sh2">&nbsp;</td><td>2</td></tr>
+<tr><td>1</td><td class="sa1">&nbsp;</td><td class="sb1">&nbsp;</td><td class="sc1">&nbsp;</td><td class="sd1">&nbsp;</td><td class="se1">&nbsp;</td><td class="sf1">&nbsp;</td><td class="sg1">&nbsp;</td><td class="sh1">&nbsp;</td><td>1</td></tr>
+
+
+	<tr><td class="logo"><!--<a href="" target="_blank">css<br>chess</a>--></td>
+		<td>a</td><td>b</td><td>c</td><td>d</td>
+		<td>e</td><td>f</td><td>g</td><td>h</td>
+	<td></td></tr>
+</tbody></table>
+
+
+<div class="ii">
+	<div class="i wr1">♖</div>
+	<div class="i wn1">♘</div>
+	<div class="i wb1">♗</div>
+	<div class="i wq">♕</div>
+	<div class="i wk">♔</div>
+	<div class="i wb2">♗</div>
+	<div class="i wn2">♘</div>
+	<div class="i wr2">♖</div>
+
+	<div class="i wp1">♙</div>
+	<div class="i wp2">♙</div>
+	<div class="i wp3">♙</div>
+	<div class="i wp4">♙</div>
+	<div class="i wp5">♙</div>
+	<div class="i wp6">♙</div>
+	<div class="i wp7">♙</div>
+	<div class="i wp8">♙</div>
+
+	<div class="i bp1">♟</div>
+	<div class="i bp2">♟</div>
+	<div class="i bp3">♟</div>
+	<div class="i bp4">♟</div>
+	<div class="i bp5">♟</div>
+	<div class="i bp6">♟</div>
+	<div class="i bp7">♟</div>
+	<div class="i bp8">♟</div>
+
+	<div class="i br1">♜</div>
+	<div class="i bn1">♞</div>
+	<div class="i bb1">♝</div>
+	<div class="i bq">♛</div>
+	<div class="i bk">♚</div>
+	<div class="i bb2">♝</div>
+	<div class="i bn2">♞</div>
+	<div class="i br2">♜</div>
+
+</div>
+<div class="mm">
+<h3>Byrne vs. Fischer</h3>
+<h4>17 Oct. 1957, New York</h4>
+<div class="mmouter" style="height:428px">
+<div class="mminner" style="width:480px">
+<table>
+<tbody><tr><td>1</td>
+<td><label for="x9egjm001"><span>♘</span>f3</label></td>
+<td><label for="x9egjm002"><span>♞</span>f6</label></td>
+</tr>
+<tr><td>2</td>
+<td><label for="x9egjm003">c4</label></td>
+<td><label for="x9egjm004">g6</label></td>
+</tr>
+<tr><td>3</td>
+<td><label for="x9egjm005"><span>♘</span>c3</label></td>
+<td><label for="x9egjm006"><span>♝</span>g7</label></td>
+</tr>
+<tr><td>4</td>
+<td><label for="x9egjm007">d4</label></td>
+<td><label for="x9egjm008">O-O</label></td>
+</tr>
+<tr><td>5</td>
+<td><label for="x9egjm009"><span>♗</span>f4</label></td>
+<td><label for="x9egjm010">d5</label></td>
+</tr>
+<tr><td>6</td>
+<td><label for="x9egjm011"><span>♕</span>b3</label></td>
+<td><label for="x9egjm012">dxc4</label></td>
+</tr>
+<tr><td>7</td>
+<td><label for="x9egjm013"><span>♕</span>xc4</label></td>
+<td><label for="x9egjm014">c6</label></td>
+</tr>
+<tr><td>8</td>
+<td><label for="x9egjm015">e4</label></td>
+<td><label for="x9egjm016"><span>♞</span>bd7</label></td>
+</tr>
+<tr><td>9</td>
+<td><label for="x9egjm017"><span>♖</span>d1</label></td>
+<td><label for="x9egjm018"><span>♞</span>b6</label></td>
+</tr>
+<tr><td>10</td>
+<td><label for="x9egjm019"><span>♕</span>c5</label></td>
+<td><label for="x9egjm020"><span>♝</span>g4</label></td>
+</tr>
+<tr><td>11</td>
+<td><label for="x9egjm021"><span>♗</span>g5</label></td>
+<td><label for="x9egjm022"><span>♞</span>a4!</label></td>
+</tr>
+<tr><td>12</td>
+<td><label for="x9egjm023"><span>♕</span>a3</label></td>
+<td><label for="x9egjm024"><span>♞</span>xc3</label></td>
+</tr>
+<tr><td>13</td>
+<td><label for="x9egjm025">bxc3</label></td>
+<td><label for="x9egjm026"><span>♞</span>xe4</label></td>
+</tr>
+<tr><td>14</td>
+<td><label for="x9egjm027"><span>♗</span>xe7</label></td>
+<td><label for="x9egjm028"><span>♛</span>b6</label></td>
+</tr>
+<tr><td>15</td>
+<td><label for="x9egjm029"><span>♗</span>c4</label></td>
+<td><label for="x9egjm030"><span>♞</span>xc3</label></td>
+</tr>
+<tr><td>16</td>
+<td><label for="x9egjm031"><span>♗</span>c5</label></td>
+<td><label for="x9egjm032"><span>♜</span>fe8+</label></td>
+</tr>
+</tbody></table><table>
+<tbody><tr><td>17</td>
+<td><label for="x9egjm033"><span>♔</span>f1</label></td>
+<td><label for="x9egjm034"><span>♝</span>e6!!</label></td>
+</tr>
+<tr><td>18</td>
+<td><label for="x9egjm035"><span>♗</span>xb6</label></td>
+<td><label for="x9egjm036"><span>♝</span>xc4+</label></td>
+</tr>
+<tr><td>19</td>
+<td><label for="x9egjm037"><span>♔</span>g1</label></td>
+<td><label for="x9egjm038"><span>♞</span>e2+</label></td>
+</tr>
+<tr><td>20</td>
+<td><label for="x9egjm039"><span>♔</span>f1</label></td>
+<td><label for="x9egjm040"><span>♞</span>xd4+</label></td>
+</tr>
+<tr><td>21</td>
+<td><label for="x9egjm041"><span>♔</span>g1</label></td>
+<td><label for="x9egjm042"><span>♞</span>e2+</label></td>
+</tr>
+<tr><td>22</td>
+<td><label for="x9egjm043"><span>♔</span>f1</label></td>
+<td><label for="x9egjm044"><span>♞</span>c3+</label></td>
+</tr>
+<tr><td>23</td>
+<td><label for="x9egjm045"><span>♔</span>g1</label></td>
+<td><label for="x9egjm046">axb6</label></td>
+</tr>
+<tr><td>24</td>
+<td><label for="x9egjm047"><span>♕</span>b4</label></td>
+<td><label for="x9egjm048"><span>♜</span>a4</label></td>
+</tr>
+<tr><td>25</td>
+<td><label for="x9egjm049"><span>♕</span>xb6</label></td>
+<td><label for="x9egjm050"><span>♞</span>xd1</label></td>
+</tr>
+<tr><td>26</td>
+<td><label for="x9egjm051">h3</label></td>
+<td><label for="x9egjm052"><span>♜</span>xa2</label></td>
+</tr>
+<tr><td>27</td>
+<td><label for="x9egjm053"><span>♔</span>h2</label></td>
+<td><label for="x9egjm054"><span>♞</span>xf2</label></td>
+</tr>
+<tr><td>28</td>
+<td><label for="x9egjm055"><span>♖</span>e1</label></td>
+<td><label for="x9egjm056"><span>♜</span>xe1</label></td>
+</tr>
+<tr><td>29</td>
+<td><label for="x9egjm057"><span>♕</span>d8+</label></td>
+<td><label for="x9egjm058"><span>♝</span>f8</label></td>
+</tr>
+<tr><td>30</td>
+<td><label for="x9egjm059"><span>♘</span>xe1</label></td>
+<td><label for="x9egjm060"><span>♝</span>d5</label></td>
+</tr>
+<tr><td>31</td>
+<td><label for="x9egjm061"><span>♘</span>f3</label></td>
+<td><label for="x9egjm062"><span>♞</span>e4</label></td>
+</tr>
+<tr><td>32</td>
+<td><label for="x9egjm063"><span>♕</span>b8</label></td>
+<td><label for="x9egjm064">b5</label></td>
+</tr>
+</tbody></table><table>
+<tbody><tr><td>33</td>
+<td><label for="x9egjm065">h4</label></td>
+<td><label for="x9egjm066">h5</label></td>
+</tr>
+<tr><td>34</td>
+<td><label for="x9egjm067"><span>♘</span>e5</label></td>
+<td><label for="x9egjm068"><span>♚</span>g7</label></td>
+</tr>
+<tr><td>35</td>
+<td><label for="x9egjm069"><span>♔</span>g1</label></td>
+<td><label for="x9egjm070"><span>♝</span>c5+</label></td>
+</tr>
+<tr><td>36</td>
+<td><label for="x9egjm071"><span>♔</span>f1</label></td>
+<td><label for="x9egjm072"><span>♞</span>g3+</label></td>
+</tr>
+<tr><td>37</td>
+<td><label for="x9egjm073"><span>♔</span>e1</label></td>
+<td><label for="x9egjm074"><span>♝</span>b4+</label></td>
+</tr>
+<tr><td>38</td>
+<td><label for="x9egjm075"><span>♔</span>d1</label></td>
+<td><label for="x9egjm076"><span>♝</span>b3+</label></td>
+</tr>
+<tr><td>39</td>
+<td><label for="x9egjm077"><span>♔</span>c1</label></td>
+<td><label for="x9egjm078"><span>♞</span>e2+</label></td>
+</tr>
+<tr><td>40</td>
+<td><label for="x9egjm079"><span>♔</span>b1</label></td>
+<td><label for="x9egjm080"><span>♞</span>c3+</label></td>
+</tr>
+<tr><td>41</td>
+<td><label for="x9egjm081"><span>♔</span>c1</label></td>
+<td><label for="x9egjm082"><span>♜</span>c2#</label></td>
+</tr>
+</tbody></table></div></div>
+</div>
+
+
+
+
+</div></div></body></html>
