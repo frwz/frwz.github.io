@@ -1,0 +1,262 @@
+.chessboard {
+	width: 800px; height: 480px;
+	position: relative;
+	border: 1px solid #bbb;
+	border-radius:12px;
+	margin-left: auto;
+	margin-right: auto;
+}
+@-moz-document url-prefix() {
+	.chessboard {
+		overflow: hidden;
+	}
+}
+table.board {
+	empty-cells: show;
+	border-spacing: 0;
+	width: 432px;
+	position: absolute;
+    left: 0;
+    top: 0;
+    /*z-index: -1;*/
+}
+table.board tr { height: 48px; }
+table.board td { 
+	width: 48px;
+	/*border-top: 1px solid black;
+	border-left: 1px solid black;*/
+	padding: 0; margin: -1;
+}
+table.board tr:nth-child(odd) td:nth-child(odd),
+table.board tr:nth-child(even) td:nth-child(even) {
+	background-color: #fff;
+}
+table.board tr:nth-child(even) td:nth-child(odd),
+table.board tr:nth-child(odd) td:nth-child(even) {
+	background-color: #bbb;
+}
+/*
+table.board tr td:nth-child(9) {
+	border-right: 1px solid black;
+}
+table.board tr:nth-child(9) td {
+	border-bottom: 1px solid black;
+}*/
+table.board tr td:first-child,
+table.board tr td:last-child {
+	width: 24px;
+	background-color: transparent !important;
+	border: none;
+}
+table.board tr:first-child,
+table.board tr:last-child {
+	height: 24px;
+}
+table.board tr:first-child td,
+table.board tr:last-child td {
+	background-color: transparent !important;
+	/*border: none;*/
+}
+
+table.board tr:nth-child(9) td:not(:first-child):not(:last-child) {
+	border-bottom: 1px solid black;
+}
+table.board tr:nth-child(2) td:not(:first-child):not(:last-child) {
+	border-top: 1px solid black;
+}
+table.board tr:not(:first-child):not(:last-child) td:nth-child(9) {
+	border-right: 1px solid black;
+}
+table.board tr:not(:first-child):not(:last-child) td:nth-child(2) {
+	border-left: 1px solid black;
+}
+
+table.board tr td:first-child,
+table.board tr td:last-child,
+table.board tr:first-child td,
+table.board tr:last-child td {
+	text-align: center;
+	font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	font-size: 20px;
+	-webkit-transition: -webkit-transform 1s;
+    transition: transform 1s;
+}
+.flip:checked ~ .board tr td:first-child,
+.flip:checked ~ .board tr td:last-child,
+.flip:checked ~ .board tr:first-child td,
+.flip:checked ~ .board tr:last-child td {
+	-ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.i {
+	font-family: "Arial Unicode MS";
+	font-size: 48px; line-height: 48px;
+	width: 48px; height: 48px;
+	text-align: center;
+	position: absolute;
+	padding: 0;
+	-webkit-transition: -webkit-transform 1s, left 0.1s, top 0.1s;
+    transition: transform 1s, left 0.1s, top 0.1s;
+}
+input[type="radio"], input[type="checkbox"] { display: none; }
+label {
+	cursor: pointer;
+	top: 434px;
+	display: inline-block;
+	border: 1px solid black;
+	border-radius: 12px;
+	width: 64px; height: 40px;
+	position: absolute;
+	font-size: 48px; line-height: 40px;
+	font-weight: bold;
+	text-align: center;
+	background-color: white;
+	margin: 0; padding: 0;
+	-webkit-transition: color 0.1s, border-color 0.1s;
+	transition: color 0.1s, border-color 0.1s;
+}
+label:hover {
+	color: red;
+	border-color: red;
+}
+label:before {
+    content:"";
+    display:block;
+    position:absolute;
+    top:-3px;
+    left:-3px;
+    right:-3px;
+    bottom:-3px;
+    border:2px solid white;
+    border-radius: 14px;
+}
+
+label { left: 104px; }
+label:after { content: "‹"; }
+input[type="radio"]:checked ~ label { display: none;}
+input[type="radio"]:checked + label + input + label {
+	display: inline-block; left: 264px;
+}
+input[type="radio"]:checked + label + input + label:after {
+	content: "›";
+}
+.starter, .flipper, .ender { display: inline-block !important; }
+.starter { left: 24px; }
+.starter:after { content: "«"; }
+.flipper { left: 184px; }
+.flipper:after { content: "↺"; }
+.flip:checked ~ .flipper:after { content: "↻"; }
+.ender { left: 344px; }
+.ender:after { content: "»";}
+.start:checked ~ .starter { display: none !important; }
+.end:checked ~ .ender { display: none !important; }
+.ii {
+	width: 384px; height: 384px;
+	position: absolute;
+	left: 24px; top: 24px;
+}
+.board, .ii {
+	-webkit-transition: -webkit-transform 1s;
+    transition: transform 1s;
+}
+.flip:checked ~ .board, .flip:checked ~ .ii {
+    -ms-transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+.flip:checked ~ .ii .i {
+	-ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+@-moz-document url-prefix() {
+    .flip:checked ~ .ii .i {
+	    -webkit-transform: perspective(1px) rotate(180deg);
+	    transform: perspective(1px) rotate(180deg);
+    }
+}
+
+table.board tr td.logo {
+	width: 24px;
+	height: 24px;
+	overflow: hidden;
+	font-size: 8px;
+	line-height: 6px;
+	font-variant: small-caps;
+}
+table.board tr td.logo a {
+	color: black;
+	text-decoration: none;
+}
+table.board tr td.logo a:hover {
+	color: red;
+}
+.mm {
+	height: 480px;
+	width: 368px;
+	border-left: 1px solid #bbb;
+	position: absolute;
+	left: 432px;
+	top: 0px;
+	font-size: 20px;
+	font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+.mmouter {
+	overflow-x: scroll;
+	width: 100%;
+}
+
+.mm table {
+	border-spacing: 0;
+	float: left;
+}
+.mm h3, .mm h4 {
+	padding-left: 12px;
+	margin-top:0;
+	margin-bottom:0;
+}
+.mm h3 { height: 30px; }
+.mm h3 { height: 26px; }
+.mm table tr {
+	line-height: 20px;
+}
+.mm table tr td {
+	margin: 0;
+	font-size: 20px;
+	vertical-align: middle;
+	height: 20px;
+}
+.mm table tr td:first-child {
+	font-size: 16px;
+	text-align: right;
+	padding-left: 12px;
+	padding-right: 4px;
+	vertical-align: bottom;
+}
+.mm label:before { display:none; }
+.mm label:after { content: ""; }
+.mm label {
+	padding: 2px;
+	position: inherit;
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	border: inherit;
+	width: inherit;
+	height: inherit;
+	line-height: inherit;
+	border-radius: inherit;
+	background-color: inherit;
+}
+.mm label span {
+	font-family: "Arial Unicode MS";
+}
+/*
+@-moz-document url-prefix() {
+	.i {
+    	-webkit-transition: -webkit-transform 0s, left 0.1s, top 0.1s;
+    	transition: transform 0s, left 0.1s, top 0.1s;
+    }
+}*/
