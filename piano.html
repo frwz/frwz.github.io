@@ -703,7 +703,7 @@ document.onkeydown = function(e) {
             }
             notesPlayingNow[ntf].push(normalized);
             var line = addNoteLine(offset);
-            var frequency = FUNDAMENTAL * offset.toFloat();
+            var frequency = FUNDAMENTAL * offset.toFloat() * Math.pow(2, OCTAVE_OFFSET);
             var oscillator = tone(frequency, VOLUME, WAVEFORM);
             oscillator.offset = offset;
             oscillator.line = line;
